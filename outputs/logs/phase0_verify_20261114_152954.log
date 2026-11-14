@@ -1,0 +1,11 @@
+== OpsTwin Phase 0 verification ==
+-- interpreter --
+Python 3.12.16
+-- container engine --
+Docker version 29.9.3, build 5457199aa5
+Docker Compose version 5.7.1
+time="2026-11-14T15:29:55+05:30" level=info msg="colima is running using macOS Virtualization.Framework"
+time="2026-11-14T15:29:55+05:30" level=info msg="arch: aarch64"
+time="2026-11-14T15:29:55+05:30" level=info msg="runtime: docker"
+-- orchestration and IaC tooling --
+scripts/verify.sh: line 10: terraform: command not found

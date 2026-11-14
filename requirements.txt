@@ -1,0 +1,15 @@
+pandas>=2.2
+numpy>=1.26
+duckdb>=1.1
+dbt-duckdb>=1.9
+prefect>=3.0
+pandera>=0.20
+scikit-learn>=1.5
+xgboost>=2.1
+statsmodels>=0.14
+factor-analyzer>=0.5
+mlflow>=2.14
+fastapi>=0.115
+uvicorn>=0.30
+httpx>=0.27
+python-dotenv>=1.0
