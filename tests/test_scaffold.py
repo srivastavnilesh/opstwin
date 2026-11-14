@@ -21,9 +21,11 @@ def test_directory_contract():
               "src/agent", "src/platform", "app", "tests", "docs", "scripts", "outputs/logs"):
         assert (config.ROOT / d).is_dir(), f"missing directory: {d}"
 
-
 def test_core_imports():
-    import pandas, duckdb, sklearn, prefect, pandera, fastapi, mlflow  # noqa: F401
+    import importlib
+
+    for name in ("duckdb", "fastapi", "mlflow", "pandas", "pandera", "prefect", "sklearn"):
+        assert importlib.import_module(name) is not None, f"{name} not importable"
 
 
 def test_platform_tooling():

@@ -1,0 +1,11 @@
+== OpsTwin Phase 1 ==
+Python 3.12.16
+/var/run/postgresql:5432 - accepting connections
+[gen] months=24 seed=42
+[gen] telemetry rows=633,243 partitions=72
+[gen] bookings=48,910 work_orders=1,200 notes=1,200 sla=96
+[gen] postgres_used=True files=78
+[gen] manifest -> /Users/nileshsrivastav/opstwin/outputs/manifests/phase1_bronze_manifest.json
+......                                                                   [100%]
+6 passed in 0.59s
+PHASE 1 GATE: PASS

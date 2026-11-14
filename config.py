@@ -14,6 +14,7 @@ class Paths:
     warehouse: Path = ROOT / "data" / "opstwin.duckdb"
     outputs: Path = ROOT / "outputs"
     logs: Path = ROOT / "outputs" / "logs"
+    manifests: Path = ROOT / "outputs" / "manifests"
 
 @dataclass(frozen=True)
 class Portfolio:
@@ -26,7 +27,8 @@ class Portfolio:
 
 @dataclass(frozen=True)
 class Services:
-    postgres_port: int = 5432
+    postgres_host: str = "localhost"
+    postgres_port: int = 5433        # host 5433 -> container 5432, avoids local Postgres clash
     prefect_port: int = 4200
     api_port: int = 8000
     dashboard_port: int = 8501
@@ -49,4 +51,20 @@ class Agent:
     offline_fallback: str = "ollama/llama3.2"
     max_sql_rows: int = 500
 
+@dataclass(frozen=True)
+class Sources:
+    units_per_site: tuple = (15, 12, 40)          # rooms / rooms / desks
+    base_adr: tuple = (8500, 7800, 1200)
+    vendors: tuple = ("V-ALPHA", "V-BETA", "V-GAMMA", "V-DELTA")
+    ticket_categories: tuple = ("HVAC", "Plumbing", "Electrical", "Lift", "Network", "Housekeeping")
+    tickets_per_site_per_year: int = 200
+    null_rate: float = 0.015
+    duplicate_rate: float = 0.004
+    outlier_rate: float = 0.002
+    unit_drift_rate: float = 0.010                # temperature rows reported in Fahrenheit
+    late_arrival_rate: float = 0.020
+
+
 PATHS, PORTFOLIO, SERVICES, ML, AGENT = Paths(), Portfolio(), Services(), ML(), Agent()
+SOURCES = Sources()
+

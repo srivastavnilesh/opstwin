@@ -1,0 +1,420 @@
+{
+  "generated_at_utc": "2026-11-14T14:36:03.349310+00:00",
+  "seed": 42,
+  "months": 24,
+  "postgres_used": true,
+  "sites": [
+    "HYD-OLD-001",
+    "GOA-VIL-002",
+    "AMD-COW-003"
+  ],
+  "row_counts": {
+    "telemetry": 633243,
+    "bookings": 48910,
+    "work_orders": 1200,
+    "notes": 1200,
+    "vendor_sla": 96,
+    "assets": 24,
+    "sensors": 36
+  },
+  "defect_rates": {
+    "null": 0.015,
+    "duplicate": 0.004,
+    "outlier": 0.002,
+    "unit_drift": 0.01,
+    "late_arrival": 0.02
+  },
+  "telemetry_partitions": 72,
+  "files": [
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-01/part.csv",
+      "rows": 8965,
+      "sha256": "31926be8b96eac52871956849e2cca128bc60aa51f54c80360718bfa7e004bca"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-02/part.csv",
+      "rows": 8095,
+      "sha256": "16ca080616fcb8e38f881b0ad25ed83c2fe2d83c84c68617733b0e3596a4ac6c"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-03/part.csv",
+      "rows": 8966,
+      "sha256": "48e26b755c1e6bd4e28f69cd321a66416e0e3dd4c0d682f8f344af297c744911"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-04/part.csv",
+      "rows": 8679,
+      "sha256": "4437c7716556ffbcb881b68987dcbe660830b4675ec8b071950f9101e16ad729"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-05/part.csv",
+      "rows": 8964,
+      "sha256": "02eb25f03e60f383a2a30272b85823f41edf763a24d70525df82bbc86c11c6d4"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-06/part.csv",
+      "rows": 8682,
+      "sha256": "da01496f1f759daaf024d185da5d4e3342ebf6706e56c52be57ccc1b1af32ba7"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-07/part.csv",
+      "rows": 8967,
+      "sha256": "ab9505bc591ee731539e7ce65947155310e2ed0f83f7e337f7f63cc2f98a8751"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-08/part.csv",
+      "rows": 8966,
+      "sha256": "c93d1a609a2a4466b137ac7ada7073c3431e0977e07c6129f14ef40dd348fb40"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-09/part.csv",
+      "rows": 8663,
+      "sha256": "a14461b620b48de378fab7e2ab9b7dc17f5025a4ae075e94476577a63261d3a4"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-10/part.csv",
+      "rows": 8964,
+      "sha256": "e289177776994a8c7603353a4ce11307d0ba9fc6671cbc4d46ade43f92b341f3"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-11/part.csv",
+      "rows": 8684,
+      "sha256": "77822d381c2da925b25a8806512f062fc3f01cbff3a5851579b670805141fce9"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2025-12/part.csv",
+      "rows": 8953,
+      "sha256": "9bb786600a023630edcb341491d3093ef1a39c5fd6ebae61d93f96aa6c56edf5"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-01/part.csv",
+      "rows": 8966,
+      "sha256": "20675c650161e41b8e1b1306f0510ccf8cbc60c582ea4e7fd584b20cd7da5631"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-02/part.csv",
+      "rows": 8106,
+      "sha256": "0497ae852607639bca12e8bd2119b88a2c78c11f0ded4f9356da47193651fb37"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-03/part.csv",
+      "rows": 8958,
+      "sha256": "a16d5faee6c6a9e89d21abce4ffc2df82cd569b74c60179281475490d6c1c851"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-04/part.csv",
+      "rows": 8679,
+      "sha256": "6b787101975bb0d6b17dc55d5687d747f90ae933c740f2502defb355bdd4f6c8"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-05/part.csv",
+      "rows": 8953,
+      "sha256": "122412a7c235f05315e0088921c2caa635537e676e83843e235ce7a9278a188c"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-06/part.csv",
+      "rows": 8669,
+      "sha256": "7be3fb2c6f5ccc7a37a7f2adc5862915d5a8a70f45f1ea4f3d4f3a974477a35f"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-07/part.csv",
+      "rows": 8970,
+      "sha256": "cf420139c32dfd21a2fbb214b60652d76ee85b215674590e0a5bd0690da0cf25"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-08/part.csv",
+      "rows": 8972,
+      "sha256": "b8a04398c55dc087532190d06c628ef71b7779cdd8355aa20ca0cd9870a86266"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-09/part.csv",
+      "rows": 8682,
+      "sha256": "141563a3ff272d8b6cb92aa603cba325c19e4cb3aaa2d5f616ebbea375efb610"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-10/part.csv",
+      "rows": 8958,
+      "sha256": "0109313861fa5c62ac1f9a0e1c1765879b1cbe874ffa62212f693e9cef1f0188"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-11/part.csv",
+      "rows": 8676,
+      "sha256": "67fb0a818fa92bc9ca429d70b6d5960be4057ce1b86f81f0a27c8da0e4fa64cf"
+    },
+    {
+      "path": "data/bronze/telemetry/site=AMD-COW-003/month=2026-12/part.csv",
+      "rows": 8965,
+      "sha256": "8b67eee0c3ceec517f9853e9f184c4bb337fb7b17ead78320f5c9a3e41d00938"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-01/part.csv",
+      "rows": 8956,
+      "sha256": "a743ae290d732290e4c8eaabec0bb7795d5c21064d9335117e1c65d3d480eda5"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-02/part.csv",
+      "rows": 8101,
+      "sha256": "99a61a473958fee16de33535d6b04121615317a3ad653447bc830fbe7e94a941"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-03/part.csv",
+      "rows": 8973,
+      "sha256": "998561d13ba96c64eda0cf35030f1465fbfbc4fd0e7fcbe1eba2d7233f2c62f6"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-04/part.csv",
+      "rows": 8679,
+      "sha256": "c3b9c784bfca3e294e4501734f622f3872d6069ec468dce2a607450a46120bb4"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-05/part.csv",
+      "rows": 8957,
+      "sha256": "3bd6139481e5f6d05c383d2885a8e79037c6e9ee03d69813df109bd3b6683213"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-06/part.csv",
+      "rows": 8674,
+      "sha256": "6023022b54fc1a8ceb3cf9d49964593a91e74c2ac56f57ea2c9ab7af48aa4c9c"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-07/part.csv",
+      "rows": 8959,
+      "sha256": "9eb00baa572ef59e95407e1731066cfe6a5a29a2d27e595a61bc5b11b06764f7"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-08/part.csv",
+      "rows": 8966,
+      "sha256": "e5707d21595f71ff7dbf43b397d50a4db69353dfe8de446b1c7042cd1c64edda"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-09/part.csv",
+      "rows": 8674,
+      "sha256": "20497b48d4a318ba8759a8f0b0c20d368f4ce5f999dfdbb347f49f8cc24e2385"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-10/part.csv",
+      "rows": 8964,
+      "sha256": "e57db1fb6f753569d587e9c44043995648293f7de570422d5ece41b482e6d0e6"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-11/part.csv",
+      "rows": 8666,
+      "sha256": "96f93637b335e934ac52e0d3722d9ff70ab680f74dfc840057d7d22df9112d6b"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2025-12/part.csv",
+      "rows": 8961,
+      "sha256": "29c54f7e59ddbc967c257217003d5fde2e008efce4a9a660a95a71e0ec9d2620"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-01/part.csv",
+      "rows": 8972,
+      "sha256": "baf9edcf36b328e13f0f9be63786cacd6a9ae2fb37b8493af324c77240863814"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-02/part.csv",
+      "rows": 8092,
+      "sha256": "f3d357d4bea13d42189c02f093c0b0e96d591bd8a33e51b8c7f4a129adc1c792"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-03/part.csv",
+      "rows": 8967,
+      "sha256": "ca23e2fd8502df497fb123d976def1c49dae4b0b9c3f4dd0ae4cfa41319a4859"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-04/part.csv",
+      "rows": 8664,
+      "sha256": "2894524b8fcecef862c656432383b5fd8954e744a2bdbd5c1bae4876f07c24a3"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-05/part.csv",
+      "rows": 8969,
+      "sha256": "ff27e85f543c2c97caf7622a97f64a016f88c24523ee5893869ae32b85fd50f9"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-06/part.csv",
+      "rows": 8691,
+      "sha256": "b1e8c051aa6baa92dbc1fe64493d452a61e001c459b679ce888483ea37cf0bda"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-07/part.csv",
+      "rows": 8957,
+      "sha256": "b02e555cf2f0821c897a1402c7cb1fc9b1bfaaf920a394e5114c226237f7d20f"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-08/part.csv",
+      "rows": 8964,
+      "sha256": "790625d51b35ed30f4d58d3e37157bce3e92ae443367ee9c8403f6c7037d1aa7"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-09/part.csv",
+      "rows": 8669,
+      "sha256": "f40d1bf7df0d72fa14fcbc47468827c92f830799d7f90e5e91d02fce88ccb2f5"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-10/part.csv",
+      "rows": 8970,
+      "sha256": "f9afb21b566905bd5214e81877d8211872ea9af1f6f26e4dc81f6c8534567f46"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-11/part.csv",
+      "rows": 8673,
+      "sha256": "e3f7aa10ddd8be91aa29ade43a2da34c898fe898d4ee6392388875702cdd8433"
+    },
+    {
+      "path": "data/bronze/telemetry/site=GOA-VIL-002/month=2026-12/part.csv",
+      "rows": 8960,
+      "sha256": "47109c8b046143c2fd1ec1a7453114afb80ec8409ccd3f7531092fea4bb1e0d3"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-01/part.csv",
+      "rows": 8962,
+      "sha256": "0d22b96a3835816a731513ea0fce02caba5d4604bc7c75fad7403b9962de85f7"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-02/part.csv",
+      "rows": 8097,
+      "sha256": "0d01d581a4c096118d1c7d18ed9eae7f3128202e8bae227b372fd6d72474aae7"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-03/part.csv",
+      "rows": 8961,
+      "sha256": "85cfe07869a41b274835d603575702490dcdc12de4c82e144060f484534060a6"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-04/part.csv",
+      "rows": 8685,
+      "sha256": "959dae678191ddf5be3648bbe90eb6d050ff5c8d3d411db03347de85dac4f468"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-05/part.csv",
+      "rows": 8965,
+      "sha256": "27f4767d5bffc30e20eb595a928ab3ba3de9c05e31ccb8d4bd94d5069c357726"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-06/part.csv",
+      "rows": 8675,
+      "sha256": "3c1fc32e7137f5b33942086533165479bb5aa8f8bd5d0913b9caa28a2a4672b0"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-07/part.csv",
+      "rows": 8966,
+      "sha256": "d55fa0a64e3f7043c22b14118c8a6ef41d6d1a41c85fc505db84fc5cb2055460"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-08/part.csv",
+      "rows": 8964,
+      "sha256": "fb930b03a9be9e5bcb34e47ec73d61a5fd270378a74d5471fff0e078e35e7d2d"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-09/part.csv",
+      "rows": 8675,
+      "sha256": "197829679d5691d5300537e5b6fd95a969f6eaf3b87fdbcecc250bfbc97139f2"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-10/part.csv",
+      "rows": 8956,
+      "sha256": "a814f3534ef0a1f21b1a30526c5d93514ab6f9670819589ada201f934c29f60b"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-11/part.csv",
+      "rows": 8666,
+      "sha256": "2ad4e17e957c2cef80f2ce5b8fcb5a1a20c405d30380230414cedaa103babed9"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2025-12/part.csv",
+      "rows": 8962,
+      "sha256": "7390b8a1fd1cd3b55fd62cc714f9ef62a0fb28a05d8a145904f077b9f8a139dc"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-01/part.csv",
+      "rows": 8960,
+      "sha256": "4a99dde26a2fb41a89bae875a8a560de6149833741832777876609867fca2779"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-02/part.csv",
+      "rows": 8099,
+      "sha256": "d4f79b4efa3185c0ff1d2192ddf44ba72bb9c9510e46fb8eab01f64fea32e360"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-03/part.csv",
+      "rows": 8960,
+      "sha256": "f1ca9dff4e0d67e132854018ee8ce8d2508d53024b692fa70eafac3e97e2649c"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-04/part.csv",
+      "rows": 8668,
+      "sha256": "67e07e323428d94bf5d2e6d5800a96b5c9c6cd8ead7b9e5d684b732934cdd404"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-05/part.csv",
+      "rows": 8973,
+      "sha256": "ede0be3a871d1e72d582c6610501b8e4e1f1ad1ea9c89e09deb4bca5aa6c4b37"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-06/part.csv",
+      "rows": 8674,
+      "sha256": "47d44140f8489f5d263e74a1356975b95fa4e12412f60f8b7c8aa718890140d1"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-07/part.csv",
+      "rows": 8955,
+      "sha256": "8c2c65d105c3536c2ebf6e63a1ad1926d88800ea7df46e939966a419c861b431"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-08/part.csv",
+      "rows": 8957,
+      "sha256": "f0eb4f79722dc5008d2123506314228ec6f46d362dba04e0420036b693ef4f97"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-09/part.csv",
+      "rows": 8671,
+      "sha256": "5979b15fc2cea3e0decf6bed6614dd0ea3b78a6022568fdfaa066aad1a262a55"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-10/part.csv",
+      "rows": 8965,
+      "sha256": "1903e9b7e3e246da631837bcf3c3cf398af766e984a016b6b1a1ef84405aedde"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-11/part.csv",
+      "rows": 8684,
+      "sha256": "b4a173111fd25804d7283495b3ae47957dfe7a151d66f6ebdfb1472528fc4505"
+    },
+    {
+      "path": "data/bronze/telemetry/site=HYD-OLD-001/month=2026-12/part.csv",
+      "rows": 8963,
+      "sha256": "4ce899b166d70657df4e13b333feb6d4c4ae755478c91e475bbdf045fa097d1d"
+    },
+    {
+      "path": "data/bronze/operational/assets.csv",
+      "rows": 24,
+      "sha256": "8e089c2611cf2b77373fa6177f980229eeee70d591526c699953303aeacb0501"
+    },
+    {
+      "path": "data/bronze/operational/sensors.csv",
+      "rows": 36,
+      "sha256": "d45f0c7ce2118ccb540ca483732cfe76717d185f70bb82a8ec0588b72d912210"
+    },
+    {
+      "path": "data/bronze/operational/bookings.csv",
+      "rows": 48910,
+      "sha256": "49c0842ac4be484004c72507b939cc84573fb3ec4f10f15403b0f781df38e884"
+    },
+    {
+      "path": "data/bronze/operational/work_orders.csv",
+      "rows": 1200,
+      "sha256": "36c68830c375c9f45d656c38a6ed63a4f5f276be5796a7d44dbcf1ce71b11a1f"
+    },
+    {
+      "path": "data/bronze/vendor_sla/vendor_sla.csv",
+      "rows": 96,
+      "sha256": "997c0c2cded3d9499635a0963c04963421ba7b38b23189105da97dc3fb37ac14"
+    },
+    {
+      "path": "data/bronze/maintenance_notes/notes.jsonl",
+      "rows": 1200,
+      "sha256": "ddef3f87719165aed09e5e22d6110e238edfc935b4183f71c5b8f1f0d1e64f3f"
+    }
+  ]
+}
