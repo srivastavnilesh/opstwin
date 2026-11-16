@@ -1,0 +1,17 @@
+[0m18:46:38  [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 23
+  ------------------------------
+  20 |     silver:
+  21 |       +materialized: table
+  22 |       +schema: silver
+  23 |           gold:
+  24 |       +materialized: table
+  25 |       +schema: gold
+  26 |     marts:
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 23, column 15
+[0m18:46:38  [[31mERROR[0m]: Error uploading artifacts to artifact ingestion API: 'Namespace' object has no attribute 'upload_to_artifacts_ingest_api'

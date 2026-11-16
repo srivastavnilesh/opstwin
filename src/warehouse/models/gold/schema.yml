@@ -1,0 +1,71 @@
+version: 2
+models:
+  - name: dim_site
+    description: One row per property. Conformed site reference.
+    columns:
+      - name: site_key
+        tests: [not_null, unique]
+      - name: site_id
+        tests: [not_null, unique]
+  - name: dim_asset
+    description: One row per maintainable physical asset.
+    columns:
+      - name: asset_key
+        tests: [not_null, unique]
+      - name: site_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_site'), field: site_key}
+  - name: dim_sensor
+    description: One row per sensor, mapped to asset and nominal unit.
+    columns:
+      - name: sensor_key
+        tests: [not_null, unique]
+  - name: dim_vendor
+    description: One row per maintenance vendor.
+    columns:
+      - name: vendor_key
+        tests: [not_null, unique]
+  - name: dim_date
+    description: Calendar dimension covering the observation window.
+    columns:
+      - name: date_key
+        tests: [not_null, unique]
+  - name: fact_telemetry
+    description: Hourly sensor readings, normalised, deduplicated, outlier-flagged.
+    columns:
+      - name: reading_id
+        tests: [not_null, unique]
+      - name: site_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_site'), field: site_key}
+      - name: asset_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_asset'), field: asset_key}
+      - name: sensor_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_sensor'), field: sensor_key}
+  - name: fact_bookings
+    description: Daily occupancy and revenue per bookable unit.
+    columns:
+      - name: date_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_date'), field: date_key}
+  - name: fact_work_orders
+    description: Maintenance tickets with resolution time and SLA breach flag.
+    columns:
+      - name: ticket_id
+        tests: [not_null, unique]
+      - name: vendor_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_vendor'), field: vendor_key}
+  - name: fact_vendor_sla_monthly
+    description: Monthly vendor service-level reporting.
+    columns:
+      - name: vendor_key
+        tests: [not_null]
