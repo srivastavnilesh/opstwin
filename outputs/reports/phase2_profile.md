@@ -1,6 +1,6 @@
 # OpsTwin Phase 2A - Bronze to Silver Defect Ledger
 
-Generated: 2026-11-14T15:51:25.303477+00:00
+Generated: 2026-11-16T17:33:39.630577+00:00
 
 ## Row reconciliation
 

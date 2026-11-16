@@ -3716,3 +3716,1879 @@ having count(*) > 1
 [0m21:21:09.518391 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 12.005727, "process_in_blocks": "0", "process_kernel_time": 19.48833, "process_mem_max_rss": "836452352", "process_out_blocks": "0", "process_user_time": 55.668205}
 [0m21:21:09.518646 [debug] [MainThread]: Command `dbt build` succeeded at 21:21:09.518602 after 12.01 seconds
 [0m21:21:09.518821 [debug] [MainThread]: Flushing usage events
+[0m23:03:16.428652 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:03:16.448726 | 2a38d3af-879c-47ff-833f-abffa5eaa12e ==============================
+[0m23:03:16.448726 [info ] [MainThread]: Running with dbt=1.12.7
+[0m23:03:16.449553 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'empty': 'False', 'write_json': 'True', 'introspect': 'True', 'invocation_command': 'dbt build --project-dir /Users/nileshsrivastav/opstwin/src/warehouse --profiles-dir /Users/nileshsrivastav/opstwin/src/warehouse', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'profiles_dir': '/Users/nileshsrivastav/opstwin/src/warehouse', 'static_parser': 'True', 'log_path': '/Users/nileshsrivastav/opstwin/src/warehouse/logs', 'log_format': 'default', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m23:03:16.821890 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m23:03:16.925565 [debug] [MainThread]: checksum: 568de9f2722d973757977ca1f23a81934c6c51374bececa613bf3e0f39e71aeb, vars: {}, profile: opstwin, target: dev, version: 1.12.7
+[0m23:03:17.110465 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:03:17.110828 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:03:17.111049 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:03:17.251597 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nileshsrivastav/opstwin/src/warehouse/target/manifest.json
+[0m23:03:17.253844 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nileshsrivastav/opstwin/src/warehouse/target/semantic_manifest.json
+[0m23:03:17.269880 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/nileshsrivastav/opstwin/src/warehouse/target/osi_document.json
+[0m23:03:17.291762 [info ] [MainThread]: Found 13 models, 15 data tests, 3 seeds, 512 macros
+[0m23:03:17.294543 [info ] [MainThread]: 
+[0m23:03:17.294840 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:03:17.295066 [info ] [MainThread]: 
+[0m23:03:17.295474 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:03:17.299813 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_opstwin'
+[0m23:03:17.307567 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_opstwin'
+[0m23:03:17.308002 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_opstwin'
+[0m23:03:17.365193 [debug] [ThreadPool]: Using duckdb connection "list_opstwin"
+[0m23:03:17.365557 [debug] [ThreadPool]: Using duckdb connection "list_opstwin"
+[0m23:03:17.365827 [debug] [ThreadPool]: Using duckdb connection "list_opstwin"
+[0m23:03:17.366074 [debug] [ThreadPool]: On list_opstwin: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"opstwin"'
+    
+  
+  
+[0m23:03:17.366329 [debug] [ThreadPool]: On list_opstwin: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"opstwin"'
+    
+  
+  
+[0m23:03:17.366574 [debug] [ThreadPool]: On list_opstwin: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"opstwin"'
+    
+  
+  
+[0m23:03:17.366802 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:03:17.367025 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:03:17.367231 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:03:17.456905 [debug] [ThreadPool]: SQL status: OK in 0.090 seconds
+[0m23:03:17.457269 [debug] [ThreadPool]: SQL status: OK in 0.090 seconds
+[0m23:03:17.457521 [debug] [ThreadPool]: SQL status: OK in 0.091 seconds
+[0m23:03:17.458755 [debug] [ThreadPool]: On list_opstwin: Close
+[0m23:03:17.459652 [debug] [ThreadPool]: On list_opstwin: Close
+[0m23:03:17.460558 [debug] [ThreadPool]: On list_opstwin: Close
+[0m23:03:17.461366 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opstwin, now create_opstwin_seeds)
+[0m23:03:17.461658 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opstwin, now create_opstwin_staging)
+[0m23:03:17.461943 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opstwin, now create_opstwin_silver)
+[0m23:03:17.462265 [debug] [ThreadPool]: Creating schema "database: "opstwin"
+schema: "seeds"
+"
+[0m23:03:17.462585 [debug] [ThreadPool]: Creating schema "database: "opstwin"
+schema: "staging"
+"
+[0m23:03:17.462890 [debug] [ThreadPool]: Creating schema "database: "opstwin"
+schema: "silver"
+"
+[0m23:03:17.468834 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_seeds"
+[0m23:03:17.469698 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_staging"
+[0m23:03:17.470561 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_silver"
+[0m23:03:17.470810 [debug] [ThreadPool]: On create_opstwin_seeds: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_seeds"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='opstwin'
+        and type != 'duckdb'
+    
+  
+[0m23:03:17.471060 [debug] [ThreadPool]: On create_opstwin_staging: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='opstwin'
+        and type != 'duckdb'
+    
+  
+[0m23:03:17.471293 [debug] [ThreadPool]: On create_opstwin_silver: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_silver"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='opstwin'
+        and type != 'duckdb'
+    
+  
+[0m23:03:17.471499 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.471689 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.471873 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.473555 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:03:17.473786 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:03:17.474028 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:03:17.474981 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_silver"
+[0m23:03:17.475795 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_seeds"
+[0m23:03:17.476627 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_staging"
+[0m23:03:17.476843 [debug] [ThreadPool]: On create_opstwin_silver: BEGIN
+[0m23:03:17.477053 [debug] [ThreadPool]: On create_opstwin_seeds: BEGIN
+[0m23:03:17.477264 [debug] [ThreadPool]: On create_opstwin_staging: BEGIN
+[0m23:03:17.477678 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:03:17.477877 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_silver"
+[0m23:03:17.478072 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.478275 [debug] [ThreadPool]: On create_opstwin_silver: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_silver"} */
+
+    
+    
+        create schema if not exists "opstwin"."silver"
+    
+[0m23:03:17.478465 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.478660 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_staging"
+[0m23:03:17.478888 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_seeds"
+[0m23:03:17.479098 [debug] [ThreadPool]: On create_opstwin_staging: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_staging"} */
+
+    
+    
+        create schema if not exists "opstwin"."staging"
+    
+[0m23:03:17.479311 [debug] [ThreadPool]: On create_opstwin_seeds: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "create_opstwin_seeds"} */
+
+    
+    
+        create schema if not exists "opstwin"."seeds"
+    
+[0m23:03:17.479542 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.480173 [debug] [ThreadPool]: On create_opstwin_silver: COMMIT
+[0m23:03:17.480396 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_silver"
+[0m23:03:17.480583 [debug] [ThreadPool]: On create_opstwin_silver: COMMIT
+[0m23:03:17.480766 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.480953 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.481539 [debug] [ThreadPool]: On create_opstwin_seeds: COMMIT
+[0m23:03:17.482200 [debug] [ThreadPool]: On create_opstwin_staging: COMMIT
+[0m23:03:17.482415 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.482618 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_seeds"
+[0m23:03:17.482823 [debug] [ThreadPool]: Using duckdb connection "create_opstwin_staging"
+[0m23:03:17.483025 [debug] [ThreadPool]: On create_opstwin_silver: Close
+[0m23:03:17.483220 [debug] [ThreadPool]: On create_opstwin_seeds: COMMIT
+[0m23:03:17.483411 [debug] [ThreadPool]: On create_opstwin_staging: COMMIT
+[0m23:03:17.484001 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:03:17.484283 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:03:17.484486 [debug] [ThreadPool]: On create_opstwin_seeds: Close
+[0m23:03:17.484688 [debug] [ThreadPool]: On create_opstwin_staging: Close
+[0m23:03:17.486381 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_opstwin_seeds, now list_opstwin_seeds)
+[0m23:03:17.489921 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_seeds"
+[0m23:03:17.490265 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_opstwin_staging, now list_opstwin_staging)
+[0m23:03:17.490536 [debug] [ThreadPool]: On list_opstwin_seeds: BEGIN
+[0m23:03:17.490820 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_opstwin_silver, now list_opstwin_silver)
+[0m23:03:17.491741 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_staging"
+[0m23:03:17.491965 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.492623 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_silver"
+[0m23:03:17.492840 [debug] [ThreadPool]: On list_opstwin_staging: BEGIN
+[0m23:03:17.493106 [debug] [ThreadPool]: On list_opstwin_silver: BEGIN
+[0m23:03:17.493322 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.493517 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:03:17.493939 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:03:17.494142 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_seeds"
+[0m23:03:17.494406 [debug] [ThreadPool]: On list_opstwin_seeds: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin_seeds"} */
+select
+      'opstwin' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'seeds'
+    and lower(table_catalog) = 'opstwin'
+  
+[0m23:03:17.494750 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:03:17.494947 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_staging"
+[0m23:03:17.495184 [debug] [ThreadPool]: On list_opstwin_staging: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin_staging"} */
+select
+      'opstwin' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'staging'
+    and lower(table_catalog) = 'opstwin'
+  
+[0m23:03:17.495562 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m23:03:17.495768 [debug] [ThreadPool]: Using duckdb connection "list_opstwin_silver"
+[0m23:03:17.495974 [debug] [ThreadPool]: On list_opstwin_silver: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "connection_name": "list_opstwin_silver"} */
+select
+      'opstwin' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'silver'
+    and lower(table_catalog) = 'opstwin'
+  
+[0m23:03:17.509811 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m23:03:17.510093 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m23:03:17.510334 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m23:03:17.511573 [debug] [ThreadPool]: On list_opstwin_seeds: ROLLBACK
+[0m23:03:17.512603 [debug] [ThreadPool]: On list_opstwin_staging: ROLLBACK
+[0m23:03:17.513575 [debug] [ThreadPool]: On list_opstwin_silver: ROLLBACK
+[0m23:03:17.513828 [debug] [ThreadPool]: On list_opstwin_seeds: Close
+[0m23:03:17.514041 [debug] [ThreadPool]: On list_opstwin_staging: Close
+[0m23:03:17.514250 [debug] [ThreadPool]: On list_opstwin_silver: Close
+[0m23:03:17.516381 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:03:17.516608 [debug] [MainThread]: On master: BEGIN
+[0m23:03:17.516818 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:03:17.517336 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:03:17.517538 [debug] [MainThread]: On master: COMMIT
+[0m23:03:17.517730 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:03:17.517918 [debug] [MainThread]: On master: COMMIT
+[0m23:03:17.518241 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:03:17.518457 [debug] [MainThread]: On master: Close
+[0m23:03:17.520673 [debug] [Thread-1 (]: Began running node model.opstwin.stg_assets
+[0m23:03:17.520965 [debug] [Thread-2 (]: Began running node model.opstwin.stg_bookings
+[0m23:03:17.521334 [info ] [Thread-1 (]: 1 of 31 START sql view model staging.stg_assets ................................ [RUN]
+[0m23:03:17.521631 [debug] [Thread-3 (]: Began running node model.opstwin.stg_notes
+[0m23:03:17.521944 [info ] [Thread-2 (]: 2 of 31 START sql view model staging.stg_bookings .............................. [RUN]
+[0m23:03:17.522224 [debug] [Thread-4 (]: Began running node model.opstwin.stg_sensors
+[0m23:03:17.522529 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opstwin_seeds, now model.opstwin.stg_assets)
+[0m23:03:17.522850 [info ] [Thread-3 (]: 3 of 31 START sql view model staging.stg_notes ................................. [RUN]
+[0m23:03:17.523169 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_opstwin_staging, now model.opstwin.stg_bookings)
+[0m23:03:17.523483 [info ] [Thread-4 (]: 4 of 31 START sql view model staging.stg_sensors ............................... [RUN]
+[0m23:03:17.523760 [debug] [Thread-1 (]: Began compiling node model.opstwin.stg_assets
+[0m23:03:17.524059 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_opstwin_silver, now model.opstwin.stg_notes)
+[0m23:03:17.524304 [debug] [Thread-2 (]: Began compiling node model.opstwin.stg_bookings
+[0m23:03:17.524634 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.opstwin.stg_sensors'
+[0m23:03:17.529401 [debug] [Thread-1 (]: Writing injected SQL for node "model.opstwin.stg_assets"
+[0m23:03:17.529707 [debug] [Thread-3 (]: Began compiling node model.opstwin.stg_notes
+[0m23:03:17.530929 [debug] [Thread-2 (]: Writing injected SQL for node "model.opstwin.stg_bookings"
+[0m23:03:17.531200 [debug] [Thread-4 (]: Began compiling node model.opstwin.stg_sensors
+[0m23:03:17.532380 [debug] [Thread-3 (]: Writing injected SQL for node "model.opstwin.stg_notes"
+[0m23:03:17.533831 [debug] [Thread-4 (]: Writing injected SQL for node "model.opstwin.stg_sensors"
+[0m23:03:17.534389 [debug] [Thread-1 (]: Began executing node model.opstwin.stg_assets
+[0m23:03:17.535159 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.535452 [debug] [Thread-1 (]: On model.opstwin.stg_assets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_assets"} */
+select database_name, type from duckdb_databases()
+[0m23:03:17.535719 [debug] [Thread-4 (]: Began executing node model.opstwin.stg_sensors
+[0m23:03:17.535962 [debug] [Thread-2 (]: Began executing node model.opstwin.stg_bookings
+[0m23:03:17.536204 [debug] [Thread-3 (]: Began executing node model.opstwin.stg_notes
+[0m23:03:17.536454 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:17.538623 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.539683 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.539956 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_bookings"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('opstwin')
+                      and lower(schema_name) = lower('staging')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:03:17.540201 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:17.541277 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.577871 [debug] [Thread-2 (]: Writing runtime sql for node "model.opstwin.stg_bookings"
+[0m23:03:17.578403 [debug] [Thread-4 (]: Writing runtime sql for node "model.opstwin.stg_sensors"
+[0m23:03:17.579987 [debug] [Thread-1 (]: Writing runtime sql for node "model.opstwin.stg_assets"
+[0m23:03:17.581455 [debug] [Thread-3 (]: Writing runtime sql for node "model.opstwin.stg_notes"
+[0m23:03:17.582247 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.582592 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.582865 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: BEGIN
+[0m23:03:17.583134 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.583378 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.583658 [debug] [Thread-3 (]: On model.opstwin.stg_notes: BEGIN
+[0m23:03:17.583967 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:03:17.584235 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: BEGIN
+[0m23:03:17.584478 [debug] [Thread-1 (]: On model.opstwin.stg_assets: BEGIN
+[0m23:03:17.584708 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:17.585418 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:03:17.585698 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.586043 [debug] [Thread-1 (]: On model.opstwin.stg_assets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_assets"} */
+
+  
+  create view "opstwin"."staging"."stg_assets__dbt_tmp" as (
+    select
+    asset_id,
+    site_id,
+    asset_type,
+    health_state,
+    cast(commissioned_year as integer) as commissioned_year
+from read_csv('data/bronze/operational/assets.csv', header = true, auto_detect = true)
+  );
+
+[0m23:03:17.586333 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.586786 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.587050 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_bookings"} */
+
+  
+  create view "opstwin"."staging"."stg_bookings__dbt_tmp" as (
+    select
+    cast(booking_date as date)      as booking_date,
+    site_id,
+    unit_id,
+    cast(is_occupied as boolean)    as is_occupied,
+    cast(adr_inr as double)         as adr_inr,
+    channel
+from read_csv('data/bronze/operational/bookings.csv', header = true, auto_detect = true)
+  );
+
+[0m23:03:17.587370 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.587643 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.587900 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_sensors"} */
+
+  
+  create view "opstwin"."staging"."stg_sensors__dbt_tmp" as (
+    -- base_mu / base_sd are generator internals: excluded to prevent target leakage.
+select
+    sensor_id,
+    site_id,
+    asset_id,
+    metric,
+    unit as unit_nominal
+from read_csv('data/bronze/operational/sensors.csv', header = true, auto_detect = true)
+  );
+
+[0m23:03:17.588159 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.588461 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.590052 [debug] [Thread-3 (]: On model.opstwin.stg_notes: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_notes"} */
+
+  
+  create view "opstwin"."staging"."stg_notes__dbt_tmp" as (
+    select ticket_id, note_text
+from read_json(
+    'data/bronze/maintenance_notes/notes.jsonl',
+    format = 'newline_delimited',
+    columns = {ticket_id: 'VARCHAR', note_text: 'VARCHAR'}
+)
+  );
+
+[0m23:03:17.591967 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.596929 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.597295 [debug] [Thread-3 (]: On model.opstwin.stg_notes: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_notes"} */
+alter view "opstwin"."staging"."stg_notes" rename to "stg_notes__dbt_backup"
+[0m23:03:17.597580 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m23:03:17.597846 [debug] [Thread-4 (]: SQL status: OK in 0.009 seconds
+[0m23:03:17.599591 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.601203 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.601499 [debug] [Thread-1 (]: On model.opstwin.stg_assets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_assets"} */
+alter view "opstwin"."staging"."stg_assets" rename to "stg_assets__dbt_backup"
+[0m23:03:17.601777 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m23:03:17.602139 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_sensors"} */
+alter view "opstwin"."staging"."stg_sensors" rename to "stg_sensors__dbt_backup"
+[0m23:03:17.603727 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.604083 [debug] [Thread-3 (]: On model.opstwin.stg_notes: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_notes"} */
+alter view "opstwin"."staging"."stg_notes__dbt_tmp" rename to "stg_notes"
+[0m23:03:17.604435 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.606004 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.606299 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.606601 [debug] [Thread-1 (]: On model.opstwin.stg_assets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_assets"} */
+alter view "opstwin"."staging"."stg_assets__dbt_tmp" rename to "stg_assets"
+[0m23:03:17.608268 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.608533 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m23:03:17.608841 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_sensors"} */
+alter view "opstwin"."staging"."stg_sensors__dbt_tmp" rename to "stg_sensors"
+[0m23:03:17.620262 [debug] [Thread-3 (]: On model.opstwin.stg_notes: COMMIT
+[0m23:03:17.620674 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m23:03:17.621053 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.622366 [debug] [Thread-1 (]: On model.opstwin.stg_assets: COMMIT
+[0m23:03:17.622675 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.622978 [debug] [Thread-3 (]: On model.opstwin.stg_notes: COMMIT
+[0m23:03:17.623272 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.624679 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: COMMIT
+[0m23:03:17.625039 [debug] [Thread-1 (]: On model.opstwin.stg_assets: COMMIT
+[0m23:03:17.625372 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.625693 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: COMMIT
+[0m23:03:17.626027 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.630387 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_notes"
+[0m23:03:17.630790 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m23:03:17.631123 [debug] [Thread-3 (]: On model.opstwin.stg_notes: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_notes"} */
+
+      drop view if exists "opstwin"."staging"."stg_notes__dbt_backup" cascade
+    
+[0m23:03:17.631467 [debug] [Thread-2 (]: SQL status: OK in 0.044 seconds
+[0m23:03:17.631754 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m23:03:17.633185 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_sensors"
+[0m23:03:17.634874 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.636020 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_assets"
+[0m23:03:17.636312 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_sensors"} */
+
+      drop view if exists "opstwin"."staging"."stg_sensors__dbt_backup" cascade
+    
+[0m23:03:17.636580 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.636841 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_bookings"} */
+alter view "opstwin"."staging"."stg_bookings" rename to "stg_bookings__dbt_backup"
+[0m23:03:17.637135 [debug] [Thread-1 (]: On model.opstwin.stg_assets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_assets"} */
+
+      drop view if exists "opstwin"."staging"."stg_assets__dbt_backup" cascade
+    
+[0m23:03:17.639071 [debug] [Thread-3 (]: On model.opstwin.stg_notes: Close
+[0m23:03:17.640502 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.640802 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.642426 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.642725 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.643829 [debug] [Thread-4 (]: On model.opstwin.stg_sensors: Close
+[0m23:03:17.644144 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_bookings"} */
+alter view "opstwin"."staging"."stg_bookings__dbt_tmp" rename to "stg_bookings"
+[0m23:03:17.645244 [debug] [Thread-1 (]: On model.opstwin.stg_assets: Close
+[0m23:03:17.646060 [info ] [Thread-3 (]: 3 of 31 OK created sql view model staging.stg_notes ............................ [[32mOK[0m in 0.12s]
+[0m23:03:17.646520 [info ] [Thread-4 (]: 4 of 31 OK created sql view model staging.stg_sensors .......................... [[32mOK[0m in 0.12s]
+[0m23:03:17.647025 [debug] [Thread-3 (]: Finished running node model.opstwin.stg_notes
+[0m23:03:17.647555 [info ] [Thread-1 (]: 1 of 31 OK created sql view model staging.stg_assets ........................... [[32mOK[0m in 0.12s]
+[0m23:03:17.647868 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.648260 [debug] [Thread-4 (]: Finished running node model.opstwin.stg_sensors
+[0m23:03:17.648589 [debug] [Thread-3 (]: Began running node model.opstwin.stg_telemetry
+[0m23:03:17.649017 [debug] [Thread-1 (]: Finished running node model.opstwin.stg_assets
+[0m23:03:17.650220 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: COMMIT
+[0m23:03:17.650564 [debug] [Thread-4 (]: Began running node model.opstwin.stg_vendors_sla
+[0m23:03:17.650994 [info ] [Thread-3 (]: 5 of 31 START sql view model staging.stg_telemetry ............................. [RUN]
+[0m23:03:17.651328 [debug] [Thread-1 (]: Began running node model.opstwin.stg_work_orders
+[0m23:03:17.651642 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.651992 [info ] [Thread-4 (]: 6 of 31 START sql view model staging.stg_vendors_sla ........................... [RUN]
+[0m23:03:17.652345 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_notes, now model.opstwin.stg_telemetry)
+[0m23:03:17.652674 [info ] [Thread-1 (]: 7 of 31 START sql view model staging.stg_work_orders ........................... [RUN]
+[0m23:03:17.652958 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: COMMIT
+[0m23:03:17.653292 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_sensors, now model.opstwin.stg_vendors_sla)
+[0m23:03:17.653599 [debug] [Thread-3 (]: Began compiling node model.opstwin.stg_telemetry
+[0m23:03:17.653939 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_assets, now model.opstwin.stg_work_orders)
+[0m23:03:17.654249 [debug] [Thread-4 (]: Began compiling node model.opstwin.stg_vendors_sla
+[0m23:03:17.655765 [debug] [Thread-3 (]: Writing injected SQL for node "model.opstwin.stg_telemetry"
+[0m23:03:17.656054 [debug] [Thread-1 (]: Began compiling node model.opstwin.stg_work_orders
+[0m23:03:17.656313 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.657878 [debug] [Thread-4 (]: Writing injected SQL for node "model.opstwin.stg_vendors_sla"
+[0m23:03:17.659165 [debug] [Thread-1 (]: Writing injected SQL for node "model.opstwin.stg_work_orders"
+[0m23:03:17.660372 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.stg_bookings"
+[0m23:03:17.660810 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_bookings"} */
+
+      drop view if exists "opstwin"."staging"."stg_bookings__dbt_backup" cascade
+    
+[0m23:03:17.661094 [debug] [Thread-3 (]: Began executing node model.opstwin.stg_telemetry
+[0m23:03:17.661461 [debug] [Thread-1 (]: Began executing node model.opstwin.stg_work_orders
+[0m23:03:17.661736 [debug] [Thread-4 (]: Began executing node model.opstwin.stg_vendors_sla
+[0m23:03:17.663822 [debug] [Thread-3 (]: Writing runtime sql for node "model.opstwin.stg_telemetry"
+[0m23:03:17.665671 [debug] [Thread-1 (]: Writing runtime sql for node "model.opstwin.stg_work_orders"
+[0m23:03:17.665976 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m23:03:17.668781 [debug] [Thread-4 (]: Writing runtime sql for node "model.opstwin.stg_vendors_sla"
+[0m23:03:17.669999 [debug] [Thread-2 (]: On model.opstwin.stg_bookings: Close
+[0m23:03:17.670530 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.670895 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:17.671173 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.671990 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: BEGIN
+[0m23:03:17.671737 [info ] [Thread-2 (]: 2 of 31 OK created sql view model staging.stg_bookings ......................... [[32mOK[0m in 0.15s]
+[0m23:03:17.672357 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: BEGIN
+[0m23:03:17.672646 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: BEGIN
+[0m23:03:17.672910 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:17.673310 [debug] [Thread-2 (]: Finished running node model.opstwin.stg_bookings
+[0m23:03:17.673572 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:17.673820 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:17.674200 [debug] [Thread-2 (]: Began running node seed.opstwin.sites
+[0m23:03:17.674705 [info ] [Thread-2 (]: 8 of 31 START seed file seeds.sites ............................................ [RUN]
+[0m23:03:17.675078 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_bookings, now seed.opstwin.sites)
+[0m23:03:17.675382 [debug] [Thread-2 (]: Began compiling node seed.opstwin.sites
+[0m23:03:17.675633 [debug] [Thread-2 (]: Began executing node seed.opstwin.sites
+[0m23:03:17.675880 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.676733 [debug] [Thread-2 (]: Using duckdb connection "seed.opstwin.sites"
+[0m23:03:17.677009 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.677311 [debug] [Thread-2 (]: On seed.opstwin.sites: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "seed.opstwin.sites"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('opstwin')
+                      and lower(schema_name) = lower('seeds')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:03:17.677648 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_work_orders"} */
+
+  
+  create view "opstwin"."staging"."stg_work_orders__dbt_tmp" as (
+    select
+    ticket_id,
+    site_id,
+    asset_id,
+    category,
+    priority,
+    status,
+    vendor_id,
+    cast(opened_at_utc as timestamptz) at time zone 'UTC' as opened_at_utc,
+    cast(closed_at_utc as timestamptz) at time zone 'UTC' as closed_at_utc,
+    cast(cost_inr as double)                              as cost_inr
+from read_csv('data/bronze/operational/work_orders.csv', header = true, auto_detect = true)
+  );
+
+[0m23:03:17.677934 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:17.678207 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m23:03:17.678551 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:17.678821 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_telemetry"} */
+
+  
+  create view "opstwin"."staging"."stg_telemetry__dbt_tmp" as (
+    with src as (
+    select *
+    from read_csv(
+        'data/bronze/telemetry/site=*/month=*/part.csv',
+        header = true,
+        auto_detect = true,
+        hive_partitioning = true,
+        union_by_name = true
+    )
+)
+select
+    cast(ts_utc as timestamptz) at time zone 'UTC'           as ts_utc,
+    cast(ingested_at_utc as timestamptz) at time zone 'UTC'  as ingested_at_utc,
+    site_id,
+    sensor_id,
+    asset_id,
+    metric,
+    cast(value as double)                                    as value_raw,
+    unit                                                     as unit_raw,
+    cast(battery_pct as double)                              as battery_pct,
+    firmware,
+    month                                                    as partition_month
+from src
+  );
+
+[0m23:03:17.679107 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m23:03:17.679426 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.679709 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_vendors_sla"} */
+
+  
+  create view "opstwin"."staging"."stg_vendors_sla__dbt_tmp" as (
+    select
+    vendor_id,
+    strptime(month || '-01', '%Y-%m-%d')::date as month_start,
+    cast(avg_response_h as double)             as avg_response_h,
+    cast(avg_resolution_h as double)           as avg_resolution_h,
+    cast(sla_breach_pct as double)             as sla_breach_pct,
+    cast(invoices_inr as bigint)               as invoices_inr
+from read_csv('data/bronze/vendor_sla/vendor_sla.csv', header = true, auto_detect = true)
+  );
+
+[0m23:03:17.680975 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.700851 [debug] [Thread-4 (]: SQL status: OK in 0.021 seconds
+[0m23:03:17.703254 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.703619 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_vendors_sla"} */
+alter view "opstwin"."staging"."stg_vendors_sla" rename to "stg_vendors_sla__dbt_backup"
+[0m23:03:17.704263 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m23:03:17.706041 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.706363 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_vendors_sla"} */
+alter view "opstwin"."staging"."stg_vendors_sla__dbt_tmp" rename to "stg_vendors_sla"
+[0m23:03:17.720419 [debug] [Thread-4 (]: SQL status: OK in 0.014 seconds
+[0m23:03:17.722739 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: COMMIT
+[0m23:03:17.724332 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.724711 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: COMMIT
+[0m23:03:17.732369 [debug] [Thread-4 (]: SQL status: OK in 0.007 seconds
+[0m23:03:17.733836 [debug] [Thread-4 (]: Using duckdb connection "model.opstwin.stg_vendors_sla"
+[0m23:03:17.734162 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_vendors_sla"} */
+
+      drop view if exists "opstwin"."staging"."stg_vendors_sla__dbt_backup" cascade
+    
+[0m23:03:17.736899 [debug] [Thread-2 (]: Using duckdb connection "seed.opstwin.sites"
+[0m23:03:17.737256 [debug] [Thread-2 (]: On seed.opstwin.sites: BEGIN
+[0m23:03:17.737744 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m23:03:17.738023 [debug] [Thread-2 (]: Using duckdb connection "seed.opstwin.sites"
+[0m23:03:17.738289 [debug] [Thread-2 (]: On seed.opstwin.sites: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "seed.opstwin.sites"} */
+truncate table "opstwin"."seeds"."sites"
+[0m23:03:17.738917 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m23:03:17.740100 [debug] [Thread-4 (]: On model.opstwin.stg_vendors_sla: Close
+[0m23:03:17.740768 [info ] [Thread-4 (]: 6 of 31 OK created sql view model staging.stg_vendors_sla ...................... [[32mOK[0m in 0.09s]
+[0m23:03:17.741226 [debug] [Thread-4 (]: Finished running node model.opstwin.stg_vendors_sla
+[0m23:03:17.741552 [debug] [Thread-4 (]: Began running node seed.opstwin.sla_targets
+[0m23:03:17.741912 [info ] [Thread-4 (]: 9 of 31 START seed file seeds.sla_targets ...................................... [RUN]
+[0m23:03:17.742544 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_vendors_sla, now seed.opstwin.sla_targets)
+[0m23:03:17.743170 [debug] [Thread-4 (]: Began compiling node seed.opstwin.sla_targets
+[0m23:03:17.743569 [debug] [Thread-4 (]: Began executing node seed.opstwin.sla_targets
+[0m23:03:17.746570 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.sla_targets"
+[0m23:03:17.747056 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: BEGIN
+[0m23:03:17.747559 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:17.748002 [debug] [Thread-2 (]: SQL status: OK in 0.009 seconds
+[0m23:03:17.761308 [debug] [Thread-2 (]: Using duckdb connection "seed.opstwin.sites"
+[0m23:03:17.761688 [debug] [Thread-2 (]: On seed.opstwin.sites: 
+          COPY "opstwin"."seeds"."sites" FROM 'src/warehouse/seeds/sites.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:03:17.762142 [debug] [Thread-4 (]: SQL status: OK in 0.015 seconds
+[0m23:03:17.762457 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.sla_targets"
+[0m23:03:17.762744 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "seed.opstwin.sla_targets"} */
+truncate table "opstwin"."seeds"."sla_targets"
+[0m23:03:17.763403 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m23:03:17.764517 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.sla_targets"
+[0m23:03:17.764810 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: 
+          COPY "opstwin"."seeds"."sla_targets" FROM 'src/warehouse/seeds/sla_targets.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:03:17.767366 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.772451 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.opstwin.sla_targets"
+[0m23:03:17.772922 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m23:03:17.773538 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.opstwin.sites"
+[0m23:03:17.775033 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: COMMIT
+[0m23:03:17.776410 [debug] [Thread-2 (]: On seed.opstwin.sites: COMMIT
+[0m23:03:17.776765 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.sla_targets"
+[0m23:03:17.777338 [debug] [Thread-2 (]: Using duckdb connection "seed.opstwin.sites"
+[0m23:03:17.777891 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: COMMIT
+[0m23:03:17.778234 [debug] [Thread-2 (]: On seed.opstwin.sites: COMMIT
+[0m23:03:17.779436 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.780102 [debug] [Thread-4 (]: On seed.opstwin.sla_targets: Close
+[0m23:03:17.780695 [info ] [Thread-4 (]: 9 of 31 OK loaded seed file seeds.sla_targets .................................. [[32mINSERT 3[0m in 0.04s]
+[0m23:03:17.781159 [debug] [Thread-4 (]: Finished running node seed.opstwin.sla_targets
+[0m23:03:17.781487 [debug] [Thread-4 (]: Began running node seed.opstwin.vendors
+[0m23:03:17.781871 [info ] [Thread-4 (]: 10 of 31 START seed file seeds.vendors ......................................... [RUN]
+[0m23:03:17.782240 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.opstwin.sla_targets, now seed.opstwin.vendors)
+[0m23:03:17.782531 [debug] [Thread-4 (]: Began compiling node seed.opstwin.vendors
+[0m23:03:17.782813 [debug] [Thread-4 (]: Began executing node seed.opstwin.vendors
+[0m23:03:17.784730 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m23:03:17.785399 [debug] [Thread-2 (]: On seed.opstwin.sites: Close
+[0m23:03:17.785952 [info ] [Thread-2 (]: 8 of 31 OK loaded seed file seeds.sites ........................................ [[32mINSERT 3[0m in 0.11s]
+[0m23:03:17.786416 [debug] [Thread-2 (]: Finished running node seed.opstwin.sites
+[0m23:03:17.786748 [debug] [Thread-2 (]: Began running node model.opstwin.silver_bookings
+[0m23:03:17.787124 [info ] [Thread-2 (]: 11 of 31 START sql table model silver.silver_bookings .......................... [RUN]
+[0m23:03:17.789474 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.vendors"
+[0m23:03:17.790089 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.opstwin.sites, now model.opstwin.silver_bookings)
+[0m23:03:17.790564 [debug] [Thread-4 (]: On seed.opstwin.vendors: BEGIN
+[0m23:03:17.791028 [debug] [Thread-2 (]: Began compiling node model.opstwin.silver_bookings
+[0m23:03:17.791463 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:17.794345 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m23:03:17.794647 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.vendors"
+[0m23:03:17.794925 [debug] [Thread-4 (]: On seed.opstwin.vendors: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "seed.opstwin.vendors"} */
+truncate table "opstwin"."seeds"."vendors"
+[0m23:03:17.795531 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m23:03:17.796624 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.vendors"
+[0m23:03:17.796915 [debug] [Thread-4 (]: On seed.opstwin.vendors: 
+          COPY "opstwin"."seeds"."vendors" FROM 'src/warehouse/seeds/vendors.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:03:17.798290 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.798828 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.opstwin.vendors"
+[0m23:03:17.793523 [debug] [Thread-2 (]: Writing injected SQL for node "model.opstwin.silver_bookings"
+[0m23:03:17.801186 [debug] [Thread-2 (]: Began executing node model.opstwin.silver_bookings
+[0m23:03:17.802177 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:17.802512 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('opstwin')
+                      and lower(schema_name) = lower('silver')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:03:17.804751 [debug] [Thread-4 (]: On seed.opstwin.vendors: COMMIT
+[0m23:03:17.805303 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:17.805833 [debug] [Thread-4 (]: Using duckdb connection "seed.opstwin.vendors"
+[0m23:03:17.806494 [debug] [Thread-4 (]: On seed.opstwin.vendors: COMMIT
+[0m23:03:17.807699 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.808894 [debug] [Thread-4 (]: On seed.opstwin.vendors: Close
+[0m23:03:17.809892 [info ] [Thread-4 (]: 10 of 31 OK loaded seed file seeds.vendors ..................................... [[32mINSERT 4[0m in 0.03s]
+[0m23:03:17.810799 [debug] [Thread-4 (]: Finished running node seed.opstwin.vendors
+[0m23:03:17.811271 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m23:03:17.891996 [debug] [Thread-1 (]: SQL status: OK in 0.213 seconds
+[0m23:03:17.893375 [debug] [Thread-2 (]: Writing runtime sql for node "model.opstwin.silver_bookings"
+[0m23:03:17.897446 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.898536 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_work_orders"} */
+alter view "opstwin"."staging"."stg_work_orders" rename to "stg_work_orders__dbt_backup"
+[0m23:03:17.899689 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.903737 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.904399 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_work_orders"} */
+alter view "opstwin"."staging"."stg_work_orders__dbt_tmp" rename to "stg_work_orders"
+[0m23:03:17.905203 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:17.905888 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: BEGIN
+[0m23:03:17.906712 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.908849 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: COMMIT
+[0m23:03:17.909396 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.909853 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: COMMIT
+[0m23:03:17.910495 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m23:03:17.911140 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:17.911628 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+
+    
+
+    create  table
+      "opstwin"."silver"."silver_bookings__dbt_tmp"
+  
+    
+    as (
+      select
+    booking_date,
+    site_id,
+    unit_id,
+    is_occupied,
+    adr_inr,
+    channel,
+    case when is_occupied then adr_inr else 0 end as revenue_inr
+from "opstwin"."staging"."stg_bookings"
+    );
+    
+  
+[0m23:03:17.912320 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:17.914540 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.stg_work_orders"
+[0m23:03:17.915066 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_work_orders"} */
+
+      drop view if exists "opstwin"."staging"."stg_work_orders__dbt_backup" cascade
+    
+[0m23:03:17.916380 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:17.918831 [debug] [Thread-1 (]: On model.opstwin.stg_work_orders: Close
+[0m23:03:17.920148 [info ] [Thread-1 (]: 7 of 31 OK created sql view model staging.stg_work_orders ...................... [[32mOK[0m in 0.27s]
+[0m23:03:17.921120 [debug] [Thread-1 (]: Finished running node model.opstwin.stg_work_orders
+[0m23:03:17.922161 [debug] [Thread-4 (]: Began running node test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0
+[0m23:03:17.922837 [debug] [Thread-1 (]: Began running node test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4
+[0m23:03:17.923430 [info ] [Thread-4 (]: 12 of 31 START test accepted_values_stg_work_orders_priority__P1__P2__P3 ....... [RUN]
+[0m23:03:17.924100 [info ] [Thread-1 (]: 13 of 31 START test not_null_stg_work_orders_ticket_id ......................... [RUN]
+[0m23:03:17.924835 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.opstwin.vendors, now test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0)
+[0m23:03:17.925377 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_work_orders, now test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4)
+[0m23:03:17.925868 [debug] [Thread-4 (]: Began compiling node test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0
+[0m23:03:17.926351 [debug] [Thread-1 (]: Began compiling node test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4
+[0m23:03:17.981314 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4"
+[0m23:03:17.986198 [debug] [Thread-4 (]: Writing injected SQL for node "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"
+[0m23:03:17.987460 [debug] [Thread-4 (]: Began executing node test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0
+[0m23:03:17.987971 [debug] [Thread-1 (]: Began executing node test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4
+[0m23:03:17.989404 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"
+[0m23:03:17.990706 [debug] [Thread-4 (]: On test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('opstwin')
+                      and lower(schema_name) = lower('dbt_test__audit')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m23:03:17.991218 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:17.993614 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.037451 [debug] [Thread-4 (]: Writing runtime sql for node "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"
+[0m23:03:18.039319 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4"
+[0m23:03:18.040855 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4"
+[0m23:03:18.041620 [debug] [Thread-1 (]: On test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4: BEGIN
+[0m23:03:18.042390 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"
+[0m23:03:18.043145 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:18.043757 [debug] [Thread-4 (]: On test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0: BEGIN
+[0m23:03:18.044931 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m23:03:18.045674 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"
+[0m23:03:18.046349 [debug] [Thread-4 (]: On test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        priority as value_field,
+        count(*) as n_records
+
+    from "opstwin"."staging"."stg_work_orders"
+    group by priority
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'P1','P2','P3'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.047012 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m23:03:18.047655 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4"
+[0m23:03:18.048218 [debug] [Thread-1 (]: On test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticket_id
+from "opstwin"."staging"."stg_work_orders"
+where ticket_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.122395 [debug] [Thread-2 (]: SQL status: OK in 0.210 seconds
+[0m23:03:18.138173 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:18.139009 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'opstwin'
+      AND schema_name = 'silver'
+      AND table_name = 'silver_bookings'
+  
+[0m23:03:18.141108 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.152257 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:18.152879 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+alter table "opstwin"."silver"."silver_bookings" rename to "silver_bookings__dbt_backup"
+[0m23:03:18.155056 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.158873 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:18.159538 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+alter table "opstwin"."silver"."silver_bookings__dbt_tmp" rename to "silver_bookings"
+[0m23:03:18.160792 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.172940 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: COMMIT
+[0m23:03:18.173538 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:18.174019 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: COMMIT
+[0m23:03:18.198385 [debug] [Thread-2 (]: SQL status: OK in 0.024 seconds
+[0m23:03:18.200579 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.silver_bookings"
+[0m23:03:18.201077 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_bookings"} */
+
+      drop table if exists "opstwin"."silver"."silver_bookings__dbt_backup" cascade
+    
+[0m23:03:18.202302 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.204258 [debug] [Thread-2 (]: On model.opstwin.silver_bookings: Close
+[0m23:03:18.205312 [info ] [Thread-2 (]: 11 of 31 OK created sql table model silver.silver_bookings ..................... [[32mOK[0m in 0.41s]
+[0m23:03:18.206058 [debug] [Thread-2 (]: Finished running node model.opstwin.silver_bookings
+[0m23:03:18.206596 [debug] [Thread-2 (]: Began running node test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6
+[0m23:03:18.207258 [info ] [Thread-2 (]: 14 of 31 START test unique_stg_work_orders_ticket_id ........................... [RUN]
+[0m23:03:18.207996 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.opstwin.silver_bookings, now test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6)
+[0m23:03:18.208474 [debug] [Thread-2 (]: Began compiling node test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6
+[0m23:03:18.232521 [debug] [Thread-2 (]: Writing injected SQL for node "test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6"
+[0m23:03:18.233672 [debug] [Thread-2 (]: Began executing node test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6
+[0m23:03:18.235517 [debug] [Thread-2 (]: Writing runtime sql for node "test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6"
+[0m23:03:18.236251 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6"
+[0m23:03:18.236643 [debug] [Thread-2 (]: On test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6: BEGIN
+[0m23:03:18.236997 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:18.237931 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.238302 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6"
+[0m23:03:18.238672 [debug] [Thread-2 (]: On test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    ticket_id as unique_field,
+    count(*) as n_records
+
+from "opstwin"."staging"."stg_work_orders"
+where ticket_id is not null
+group by ticket_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.339260 [debug] [Thread-1 (]: SQL status: OK in 0.290 seconds
+[0m23:03:18.343603 [debug] [Thread-1 (]: On test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4: ROLLBACK
+[0m23:03:18.344320 [debug] [Thread-1 (]: On test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4: Close
+[0m23:03:18.345024 [info ] [Thread-1 (]: 13 of 31 PASS not_null_stg_work_orders_ticket_id ............................... [[32mPASS[0m in 0.42s]
+[0m23:03:18.345644 [debug] [Thread-1 (]: Finished running node test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4
+[0m23:03:18.346417 [debug] [Thread-4 (]: SQL status: OK in 0.299 seconds
+[0m23:03:18.348433 [debug] [Thread-4 (]: On test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0: ROLLBACK
+[0m23:03:18.349041 [debug] [Thread-4 (]: On test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0: Close
+[0m23:03:18.349673 [info ] [Thread-4 (]: 12 of 31 PASS accepted_values_stg_work_orders_priority__P1__P2__P3 ............. [[32mPASS[0m in 0.42s]
+[0m23:03:18.350248 [debug] [Thread-4 (]: Finished running node test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0
+[0m23:03:18.550610 [debug] [Thread-2 (]: SQL status: OK in 0.311 seconds
+[0m23:03:18.552957 [debug] [Thread-2 (]: On test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6: ROLLBACK
+[0m23:03:18.553760 [debug] [Thread-2 (]: On test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6: Close
+[0m23:03:18.554575 [info ] [Thread-2 (]: 14 of 31 PASS unique_stg_work_orders_ticket_id ................................. [[32mPASS[0m in 0.35s]
+[0m23:03:18.555306 [debug] [Thread-2 (]: Finished running node test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6
+[0m23:03:18.556159 [debug] [Thread-1 (]: Began running node model.opstwin.silver_work_orders
+[0m23:03:18.556921 [info ] [Thread-1 (]: 15 of 31 START sql table model silver.silver_work_orders ....................... [RUN]
+[0m23:03:18.557535 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.opstwin.not_null_stg_work_orders_ticket_id.cddc1370f4, now model.opstwin.silver_work_orders)
+[0m23:03:18.557995 [debug] [Thread-1 (]: Began compiling node model.opstwin.silver_work_orders
+[0m23:03:18.560876 [debug] [Thread-1 (]: Writing injected SQL for node "model.opstwin.silver_work_orders"
+[0m23:03:18.561901 [debug] [Thread-1 (]: Began executing node model.opstwin.silver_work_orders
+[0m23:03:18.566420 [debug] [Thread-1 (]: Writing runtime sql for node "model.opstwin.silver_work_orders"
+[0m23:03:18.567573 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.568051 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: BEGIN
+[0m23:03:18.568483 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:18.569575 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.570021 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.570627 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_work_orders"} */
+
+    
+
+    create  table
+      "opstwin"."silver"."silver_work_orders__dbt_tmp"
+  
+    
+    as (
+      with wo as (select * from "opstwin"."staging"."stg_work_orders"),
+targets as (select * from "opstwin"."seeds"."sla_targets")
+select
+    wo.ticket_id,
+    wo.site_id,
+    wo.asset_id,
+    wo.vendor_id,
+    wo.category,
+    wo.priority,
+    wo.status,
+    wo.opened_at_utc,
+    wo.closed_at_utc,
+    wo.cost_inr,
+    t.target_resolution_hours,
+    case when wo.closed_at_utc is not null
+         then date_diff('minute', wo.opened_at_utc, wo.closed_at_utc) / 60.0
+    end                                                        as resolution_hours,
+    (wo.status = 'OPEN')                                       as is_open,
+    case when wo.closed_at_utc is not null
+         then date_diff('minute', wo.opened_at_utc, wo.closed_at_utc) / 60.0
+              > t.target_resolution_hours
+         else false
+    end                                                        as is_sla_breach
+from wo
+left join targets t on t.priority = wo.priority
+    );
+    
+  
+[0m23:03:18.825605 [debug] [Thread-3 (]: SQL status: OK in 1.146 seconds
+[0m23:03:18.828580 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:18.829046 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_telemetry"} */
+alter view "opstwin"."staging"."stg_telemetry" rename to "stg_telemetry__dbt_backup"
+[0m23:03:18.829499 [debug] [Thread-1 (]: SQL status: OK in 0.258 seconds
+[0m23:03:18.830914 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.831354 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_work_orders"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'opstwin'
+      AND schema_name = 'silver'
+      AND table_name = 'silver_work_orders'
+  
+[0m23:03:18.832053 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.834221 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:18.834622 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_telemetry"} */
+alter view "opstwin"."staging"."stg_telemetry__dbt_tmp" rename to "stg_telemetry"
+[0m23:03:18.835008 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:03:18.837899 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.838363 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_work_orders"} */
+alter table "opstwin"."silver"."silver_work_orders" rename to "silver_work_orders__dbt_backup"
+[0m23:03:18.838769 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m23:03:18.840387 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: COMMIT
+[0m23:03:18.840798 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:18.841156 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: COMMIT
+[0m23:03:18.841519 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.843673 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.844065 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_work_orders"} */
+alter table "opstwin"."silver"."silver_work_orders__dbt_tmp" rename to "silver_work_orders"
+[0m23:03:18.844436 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m23:03:18.845912 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.stg_telemetry"
+[0m23:03:18.846270 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.stg_telemetry"} */
+
+      drop view if exists "opstwin"."staging"."stg_telemetry__dbt_backup" cascade
+    
+[0m23:03:18.846605 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.849024 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: COMMIT
+[0m23:03:18.849366 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.849687 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m23:03:18.849995 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: COMMIT
+[0m23:03:18.851175 [debug] [Thread-3 (]: On model.opstwin.stg_telemetry: Close
+[0m23:03:18.851933 [info ] [Thread-3 (]: 5 of 31 OK created sql view model staging.stg_telemetry ........................ [[32mOK[0m in 1.20s]
+[0m23:03:18.852447 [debug] [Thread-3 (]: Finished running node model.opstwin.stg_telemetry
+[0m23:03:18.853012 [debug] [Thread-2 (]: Began running node test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e
+[0m23:03:18.853437 [debug] [Thread-4 (]: Began running node test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6
+[0m23:03:18.853770 [info ] [Thread-2 (]: 16 of 31 START test accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration  [RUN]
+[0m23:03:18.854110 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:03:18.854452 [debug] [Thread-3 (]: Began running node test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f
+[0m23:03:18.854817 [info ] [Thread-4 (]: 17 of 31 START test not_null_stg_telemetry_sensor_id ........................... [RUN]
+[0m23:03:18.855316 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.opstwin.unique_stg_work_orders_ticket_id.55c4790ff6, now test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e)
+[0m23:03:18.856799 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.silver_work_orders"
+[0m23:03:18.857185 [info ] [Thread-3 (]: 18 of 31 START test not_null_stg_telemetry_ts_utc .............................. [RUN]
+[0m23:03:18.857615 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.opstwin.accepted_values_stg_work_orders_priority__P1__P2__P3.a8698770c0, now test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6)
+[0m23:03:18.857965 [debug] [Thread-2 (]: Began compiling node test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e
+[0m23:03:18.858294 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_work_orders"} */
+
+      drop table if exists "opstwin"."silver"."silver_work_orders__dbt_backup" cascade
+    
+[0m23:03:18.858654 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.opstwin.stg_telemetry, now test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f)
+[0m23:03:18.858964 [debug] [Thread-4 (]: Began compiling node test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6
+[0m23:03:18.884659 [debug] [Thread-2 (]: Writing injected SQL for node "test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e"
+[0m23:03:18.885033 [debug] [Thread-3 (]: Began compiling node test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f
+[0m23:03:18.885367 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m23:03:18.891043 [debug] [Thread-4 (]: Writing injected SQL for node "test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6"
+[0m23:03:18.896856 [debug] [Thread-3 (]: Writing injected SQL for node "test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f"
+[0m23:03:18.898117 [debug] [Thread-1 (]: On model.opstwin.silver_work_orders: Close
+[0m23:03:18.898992 [info ] [Thread-1 (]: 15 of 31 OK created sql table model silver.silver_work_orders .................. [[32mOK[0m in 0.34s]
+[0m23:03:18.899517 [debug] [Thread-1 (]: Finished running node model.opstwin.silver_work_orders
+[0m23:03:18.899939 [debug] [Thread-4 (]: Began executing node test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6
+[0m23:03:18.901273 [debug] [Thread-4 (]: Writing runtime sql for node "test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6"
+[0m23:03:18.901693 [debug] [Thread-3 (]: Began executing node test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f
+[0m23:03:18.902003 [debug] [Thread-2 (]: Began executing node test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e
+[0m23:03:18.902312 [debug] [Thread-1 (]: Began running node test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5
+[0m23:03:18.903517 [debug] [Thread-3 (]: Writing runtime sql for node "test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f"
+[0m23:03:18.904896 [debug] [Thread-2 (]: Writing runtime sql for node "test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e"
+[0m23:03:18.905249 [info ] [Thread-1 (]: 19 of 31 START test accepted_values_silver_work_orders_status__OPEN__CLOSED .... [RUN]
+[0m23:03:18.905721 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6"
+[0m23:03:18.906073 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.opstwin.silver_work_orders, now test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5)
+[0m23:03:18.906413 [debug] [Thread-4 (]: On test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6: BEGIN
+[0m23:03:18.906748 [debug] [Thread-1 (]: Began compiling node test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5
+[0m23:03:18.907074 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f"
+[0m23:03:18.907346 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:18.907646 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e"
+[0m23:03:18.921049 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5"
+[0m23:03:18.921360 [debug] [Thread-3 (]: On test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f: BEGIN
+[0m23:03:18.921755 [debug] [Thread-2 (]: On test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e: BEGIN
+[0m23:03:18.922100 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:18.922402 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:18.922896 [debug] [Thread-1 (]: Began executing node test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5
+[0m23:03:18.924217 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5"
+[0m23:03:18.924597 [debug] [Thread-4 (]: SQL status: OK in 0.017 seconds
+[0m23:03:18.924906 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6"
+[0m23:03:18.925213 [debug] [Thread-4 (]: On test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sensor_id
+from "opstwin"."staging"."stg_telemetry"
+where sensor_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.925721 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5"
+[0m23:03:18.926116 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5: BEGIN
+[0m23:03:18.926438 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m23:03:18.926723 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:18.927033 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m23:03:18.927304 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f"
+[0m23:03:18.927650 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e"
+[0m23:03:18.929696 [debug] [Thread-2 (]: On test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        metric as value_field,
+        count(*) as n_records
+
+    from "opstwin"."staging"."stg_telemetry"
+    group by metric
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'temperature','humidity','power','water','vibration'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.928367 [debug] [Thread-3 (]: On test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ts_utc
+from "opstwin"."staging"."stg_telemetry"
+where ts_utc is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.935279 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m23:03:18.935941 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5"
+[0m23:03:18.936442 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "opstwin"."silver"."silver_work_orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'OPEN','CLOSED'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.938953 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.942034 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5: ROLLBACK
+[0m23:03:18.943026 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5: Close
+[0m23:03:18.943617 [info ] [Thread-1 (]: 19 of 31 PASS accepted_values_silver_work_orders_status__OPEN__CLOSED .......... [[32mPASS[0m in 0.04s]
+[0m23:03:18.944066 [debug] [Thread-1 (]: Finished running node test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5
+[0m23:03:18.944386 [debug] [Thread-1 (]: Began running node test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10
+[0m23:03:18.944669 [info ] [Thread-1 (]: 20 of 31 START test not_null_silver_work_orders_ticket_id ...................... [RUN]
+[0m23:03:18.945013 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.opstwin.accepted_values_silver_work_orders_status__OPEN__CLOSED.5dfb36f3f5, now test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10)
+[0m23:03:18.945295 [debug] [Thread-1 (]: Began compiling node test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10
+[0m23:03:18.964402 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10"
+[0m23:03:18.972129 [debug] [Thread-1 (]: Began executing node test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10
+[0m23:03:18.974524 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10"
+[0m23:03:18.975476 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10"
+[0m23:03:18.975938 [debug] [Thread-1 (]: On test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10: BEGIN
+[0m23:03:18.976372 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:18.977315 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.977653 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10"
+[0m23:03:18.977944 [debug] [Thread-1 (]: On test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ticket_id
+from "opstwin"."silver"."silver_work_orders"
+where ticket_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.979065 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.980407 [debug] [Thread-1 (]: On test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10: ROLLBACK
+[0m23:03:18.981122 [debug] [Thread-1 (]: On test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10: Close
+[0m23:03:18.982107 [info ] [Thread-1 (]: 20 of 31 PASS not_null_silver_work_orders_ticket_id ............................ [[32mPASS[0m in 0.04s]
+[0m23:03:18.982856 [debug] [Thread-1 (]: Finished running node test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10
+[0m23:03:18.983204 [debug] [Thread-1 (]: Began running node test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd
+[0m23:03:18.983500 [info ] [Thread-1 (]: 21 of 31 START test unique_silver_work_orders_ticket_id ........................ [RUN]
+[0m23:03:18.983879 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.opstwin.not_null_silver_work_orders_ticket_id.0fc0736b10, now test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd)
+[0m23:03:18.984169 [debug] [Thread-1 (]: Began compiling node test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd
+[0m23:03:18.990809 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd"
+[0m23:03:18.991817 [debug] [Thread-1 (]: Began executing node test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd
+[0m23:03:18.993141 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd"
+[0m23:03:18.993686 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd"
+[0m23:03:18.993986 [debug] [Thread-1 (]: On test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd: BEGIN
+[0m23:03:18.994256 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:18.994926 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:18.995196 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd"
+[0m23:03:18.995479 [debug] [Thread-1 (]: On test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    ticket_id as unique_field,
+    count(*) as n_records
+
+from "opstwin"."silver"."silver_work_orders"
+where ticket_id is not null
+group by ticket_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:18.997476 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:18.998764 [debug] [Thread-1 (]: On test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd: ROLLBACK
+[0m23:03:18.999207 [debug] [Thread-1 (]: On test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd: Close
+[0m23:03:18.999683 [info ] [Thread-1 (]: 21 of 31 PASS unique_silver_work_orders_ticket_id .............................. [[32mPASS[0m in 0.02s]
+[0m23:03:19.000128 [debug] [Thread-1 (]: Finished running node test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd
+[0m23:03:21.419042 [debug] [Thread-4 (]: SQL status: OK in 2.493 seconds
+[0m23:03:21.423025 [debug] [Thread-4 (]: On test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6: ROLLBACK
+[0m23:03:21.424139 [debug] [Thread-4 (]: On test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6: Close
+[0m23:03:21.425221 [info ] [Thread-4 (]: 17 of 31 PASS not_null_stg_telemetry_sensor_id ................................. [[32mPASS[0m in 2.57s]
+[0m23:03:21.426192 [debug] [Thread-4 (]: Finished running node test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6
+[0m23:03:23.076222 [debug] [Thread-2 (]: SQL status: OK in 4.146 seconds
+[0m23:03:23.079140 [debug] [Thread-2 (]: On test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e: ROLLBACK
+[0m23:03:23.080053 [debug] [Thread-2 (]: On test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e: Close
+[0m23:03:23.080918 [info ] [Thread-2 (]: 16 of 31 PASS accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration  [[32mPASS[0m in 4.23s]
+[0m23:03:23.082201 [debug] [Thread-2 (]: Finished running node test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e
+[0m23:03:24.111414 [debug] [Thread-3 (]: SQL status: OK in 5.180 seconds
+[0m23:03:24.113848 [debug] [Thread-3 (]: On test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f: ROLLBACK
+[0m23:03:24.114568 [debug] [Thread-3 (]: On test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f: Close
+[0m23:03:24.115276 [info ] [Thread-3 (]: 18 of 31 PASS not_null_stg_telemetry_ts_utc .................................... [[32mPASS[0m in 5.26s]
+[0m23:03:24.115898 [debug] [Thread-3 (]: Finished running node test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f
+[0m23:03:24.116611 [debug] [Thread-1 (]: Began running node model.opstwin.int_telemetry_clean
+[0m23:03:24.117401 [info ] [Thread-1 (]: 22 of 31 START sql view model silver.int_telemetry_clean ....................... [RUN]
+[0m23:03:24.118044 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.opstwin.unique_silver_work_orders_ticket_id.fee886aecd, now model.opstwin.int_telemetry_clean)
+[0m23:03:24.118461 [debug] [Thread-1 (]: Began compiling node model.opstwin.int_telemetry_clean
+[0m23:03:24.120936 [debug] [Thread-1 (]: Writing injected SQL for node "model.opstwin.int_telemetry_clean"
+[0m23:03:24.122542 [debug] [Thread-1 (]: Began executing node model.opstwin.int_telemetry_clean
+[0m23:03:24.125353 [debug] [Thread-1 (]: Writing runtime sql for node "model.opstwin.int_telemetry_clean"
+[0m23:03:24.126019 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:24.126370 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: BEGIN
+[0m23:03:24.126690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:24.127436 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:24.127758 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:24.128123 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_telemetry_clean"} */
+
+  
+  create view "opstwin"."silver"."int_telemetry_clean__dbt_tmp" as (
+    
+
+with deduped as (
+    select *
+    from "opstwin"."staging"."stg_telemetry"
+    qualify row_number() over (
+        partition by sensor_id, ts_utc
+        order by ingested_at_utc asc
+    ) = 1
+)
+select
+    sensor_id || '|' || strftime(ts_utc, '%Y-%m-%dT%H:%M:%S') as reading_id,
+    ts_utc,
+    ingested_at_utc,
+    site_id,
+    sensor_id,
+    asset_id,
+    metric,
+    case
+        when metric = 'temperature' and unit_raw = 'F' then (value_raw - 32.0) * 5.0 / 9.0
+        else value_raw
+    end                                                     as value_normalized,
+    case
+        when metric = 'temperature' then 'C'
+        else unit_raw
+    end                                                     as unit_normalized,
+    value_raw,
+    unit_raw,
+    battery_pct,
+    firmware,
+    partition_month,
+    (ingested_at_utc > ts_utc)                              as is_late_arrival,
+    date_diff('hour', ts_utc, ingested_at_utc)              as hours_late
+from deduped
+  );
+
+[0m23:03:25.064166 [debug] [Thread-1 (]: SQL status: OK in 0.936 seconds
+[0m23:03:25.066949 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:25.067398 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_telemetry_clean"} */
+alter view "opstwin"."silver"."int_telemetry_clean" rename to "int_telemetry_clean__dbt_backup"
+[0m23:03:25.068183 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:03:25.070556 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:25.070987 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_telemetry_clean"} */
+alter view "opstwin"."silver"."int_telemetry_clean__dbt_tmp" rename to "int_telemetry_clean"
+[0m23:03:25.071684 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:03:25.073282 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: COMMIT
+[0m23:03:25.073690 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:25.074060 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: COMMIT
+[0m23:03:25.074949 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:03:25.076678 [debug] [Thread-1 (]: Using duckdb connection "model.opstwin.int_telemetry_clean"
+[0m23:03:25.077112 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_telemetry_clean"} */
+
+      drop view if exists "opstwin"."silver"."int_telemetry_clean__dbt_backup" cascade
+    
+[0m23:03:25.078010 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:03:25.079597 [debug] [Thread-1 (]: On model.opstwin.int_telemetry_clean: Close
+[0m23:03:25.080427 [info ] [Thread-1 (]: 22 of 31 OK created sql view model silver.int_telemetry_clean .................. [[32mOK[0m in 0.96s]
+[0m23:03:25.080971 [debug] [Thread-1 (]: Finished running node model.opstwin.int_telemetry_clean
+[0m23:03:25.081579 [debug] [Thread-2 (]: Began running node model.opstwin.int_sensor_stats
+[0m23:03:25.081949 [debug] [Thread-3 (]: Began running node model.opstwin.silver_telemetry_quarantine
+[0m23:03:25.082405 [info ] [Thread-2 (]: 23 of 31 START sql table model silver.int_sensor_stats ......................... [RUN]
+[0m23:03:25.082919 [info ] [Thread-3 (]: 24 of 31 START sql table model silver.silver_telemetry_quarantine .............. [RUN]
+[0m23:03:25.083373 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.opstwin.accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration.a065d9d97e, now model.opstwin.int_sensor_stats)
+[0m23:03:25.083781 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.opstwin.not_null_stg_telemetry_ts_utc.71d6842e7f, now model.opstwin.silver_telemetry_quarantine)
+[0m23:03:25.084122 [debug] [Thread-2 (]: Began compiling node model.opstwin.int_sensor_stats
+[0m23:03:25.084451 [debug] [Thread-3 (]: Began compiling node model.opstwin.silver_telemetry_quarantine
+[0m23:03:25.086191 [debug] [Thread-2 (]: Writing injected SQL for node "model.opstwin.int_sensor_stats"
+[0m23:03:25.087987 [debug] [Thread-3 (]: Writing injected SQL for node "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:25.088925 [debug] [Thread-2 (]: Began executing node model.opstwin.int_sensor_stats
+[0m23:03:25.089265 [debug] [Thread-3 (]: Began executing node model.opstwin.silver_telemetry_quarantine
+[0m23:03:25.092151 [debug] [Thread-2 (]: Writing runtime sql for node "model.opstwin.int_sensor_stats"
+[0m23:03:25.094831 [debug] [Thread-3 (]: Writing runtime sql for node "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:25.095497 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:25.095839 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: BEGIN
+[0m23:03:25.096193 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:25.096512 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:25.096856 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: BEGIN
+[0m23:03:25.097267 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:25.098019 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:25.098328 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:25.098673 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_sensor_stats"} */
+
+    
+
+    create  table
+      "opstwin"."silver"."int_sensor_stats__dbt_tmp"
+  
+    
+    as (
+      with clean as (
+    select sensor_id, value_normalized
+    from "opstwin"."silver"."int_telemetry_clean"
+    where value_normalized is not null
+),
+med as (
+    select sensor_id, median(value_normalized) as med_value
+    from clean group by sensor_id
+)
+select
+    c.sensor_id,
+    m.med_value,
+    median(abs(c.value_normalized - m.med_value)) as mad_value,
+    count(*)                                      as n_obs
+from clean c
+join med m on m.sensor_id = c.sensor_id
+group by c.sensor_id, m.med_value
+    );
+    
+  
+[0m23:03:25.099132 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m23:03:25.099444 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:25.099789 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry_quarantine"} */
+
+    
+
+    create  table
+      "opstwin"."silver"."silver_telemetry_quarantine__dbt_tmp"
+  
+    
+    as (
+      select
+    reading_id,
+    ts_utc,
+    site_id,
+    sensor_id,
+    asset_id,
+    metric,
+    unit_raw,
+    'NULL_VALUE'::varchar as quarantine_reason,
+    current_timestamp     as quarantined_at_utc
+from "opstwin"."silver"."int_telemetry_clean"
+where value_normalized is null
+    );
+    
+  
+[0m23:03:28.777381 [debug] [Thread-3 (]: SQL status: OK in 3.677 seconds
+[0m23:03:28.779363 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:28.780033 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry_quarantine"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'opstwin'
+      AND schema_name = 'silver'
+      AND table_name = 'silver_telemetry_quarantine'
+  
+[0m23:03:28.781995 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.785964 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:28.786623 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry_quarantine"} */
+alter table "opstwin"."silver"."silver_telemetry_quarantine" rename to "silver_telemetry_quarantine__dbt_backup"
+[0m23:03:28.787991 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.793314 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:28.793960 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry_quarantine"} */
+alter table "opstwin"."silver"."silver_telemetry_quarantine__dbt_tmp" rename to "silver_telemetry_quarantine"
+[0m23:03:28.795053 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.797292 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: COMMIT
+[0m23:03:28.799303 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:28.800205 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: COMMIT
+[0m23:03:28.810982 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m23:03:28.814122 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry_quarantine"
+[0m23:03:28.814873 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry_quarantine"} */
+
+      drop table if exists "opstwin"."silver"."silver_telemetry_quarantine__dbt_backup" cascade
+    
+[0m23:03:28.816646 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.819357 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry_quarantine: Close
+[0m23:03:28.820766 [info ] [Thread-3 (]: 24 of 31 OK created sql table model silver.silver_telemetry_quarantine ......... [[32mOK[0m in 3.74s]
+[0m23:03:28.821768 [debug] [Thread-3 (]: Finished running node model.opstwin.silver_telemetry_quarantine
+[0m23:03:28.822753 [debug] [Thread-1 (]: Began running node test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67
+[0m23:03:28.823399 [info ] [Thread-1 (]: 25 of 31 START test accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE  [RUN]
+[0m23:03:28.824034 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.opstwin.int_telemetry_clean, now test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67)
+[0m23:03:28.824552 [debug] [Thread-1 (]: Began compiling node test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67
+[0m23:03:28.842022 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67"
+[0m23:03:28.843311 [debug] [Thread-1 (]: Began executing node test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67
+[0m23:03:28.846205 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67"
+[0m23:03:28.847869 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67"
+[0m23:03:28.848512 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67: BEGIN
+[0m23:03:28.849040 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:28.850538 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.851161 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67"
+[0m23:03:28.851792 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        quarantine_reason as value_field,
+        count(*) as n_records
+
+    from "opstwin"."silver"."silver_telemetry_quarantine"
+    group by quarantine_reason
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'NULL_VALUE'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:28.854129 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:03:28.857119 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67: ROLLBACK
+[0m23:03:28.858272 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67: Close
+[0m23:03:28.859358 [info ] [Thread-1 (]: 25 of 31 PASS accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE  [[32mPASS[0m in 0.04s]
+[0m23:03:28.860385 [debug] [Thread-1 (]: Finished running node test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67
+[0m23:03:28.877559 [debug] [Thread-2 (]: SQL status: OK in 3.778 seconds
+[0m23:03:28.879562 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:28.880129 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_sensor_stats"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'opstwin'
+      AND schema_name = 'silver'
+      AND table_name = 'int_sensor_stats'
+  
+[0m23:03:28.881747 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.885260 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:28.885793 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_sensor_stats"} */
+alter table "opstwin"."silver"."int_sensor_stats" rename to "int_sensor_stats__dbt_backup"
+[0m23:03:28.887250 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.889801 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:28.890231 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_sensor_stats"} */
+alter table "opstwin"."silver"."int_sensor_stats__dbt_tmp" rename to "int_sensor_stats"
+[0m23:03:28.891041 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m23:03:28.892746 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: COMMIT
+[0m23:03:28.893161 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:28.893534 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: COMMIT
+[0m23:03:28.894613 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.896629 [debug] [Thread-2 (]: Using duckdb connection "model.opstwin.int_sensor_stats"
+[0m23:03:28.897081 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.int_sensor_stats"} */
+
+      drop table if exists "opstwin"."silver"."int_sensor_stats__dbt_backup" cascade
+    
+[0m23:03:28.898058 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.899568 [debug] [Thread-2 (]: On model.opstwin.int_sensor_stats: Close
+[0m23:03:28.900417 [info ] [Thread-2 (]: 23 of 31 OK created sql table model silver.int_sensor_stats .................... [[32mOK[0m in 3.82s]
+[0m23:03:28.901022 [debug] [Thread-2 (]: Finished running node model.opstwin.int_sensor_stats
+[0m23:03:28.901690 [debug] [Thread-3 (]: Began running node model.opstwin.silver_telemetry
+[0m23:03:28.902274 [info ] [Thread-3 (]: 26 of 31 START sql table model silver.silver_telemetry ......................... [RUN]
+[0m23:03:28.902814 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.opstwin.silver_telemetry_quarantine, now model.opstwin.silver_telemetry)
+[0m23:03:28.903202 [debug] [Thread-3 (]: Began compiling node model.opstwin.silver_telemetry
+[0m23:03:28.905597 [debug] [Thread-3 (]: Writing injected SQL for node "model.opstwin.silver_telemetry"
+[0m23:03:28.906358 [debug] [Thread-3 (]: Began executing node model.opstwin.silver_telemetry
+[0m23:03:28.909892 [debug] [Thread-3 (]: Writing runtime sql for node "model.opstwin.silver_telemetry"
+[0m23:03:28.910672 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:28.911069 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: BEGIN
+[0m23:03:28.911437 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:28.912385 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:28.912754 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:28.913159 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry"} */
+
+    
+
+    create  table
+      "opstwin"."silver"."silver_telemetry__dbt_tmp"
+  
+    
+    as (
+      select
+    c.reading_id,
+    c.ts_utc,
+    c.ingested_at_utc,
+    c.site_id,
+    c.sensor_id,
+    c.asset_id,
+    c.metric,
+    c.value_normalized,
+    c.unit_normalized,
+    c.battery_pct,
+    c.firmware,
+    c.partition_month,
+    c.is_late_arrival,
+    c.hours_late,
+    (abs(c.value_normalized - s.med_value)
+        > greatest(4 * s.mad_value, 0.30 * s.med_value))    as is_outlier
+from "opstwin"."silver"."int_telemetry_clean" c
+join "opstwin"."silver"."int_sensor_stats" s on s.sensor_id = c.sensor_id
+where c.value_normalized is not null
+    );
+    
+  
+[0m23:03:31.326401 [debug] [Thread-3 (]: SQL status: OK in 2.413 seconds
+[0m23:03:31.328393 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:31.328918 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE database_name = 'opstwin'
+      AND schema_name = 'silver'
+      AND table_name = 'silver_telemetry'
+  
+[0m23:03:31.330389 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.333509 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:31.334023 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry"} */
+alter table "opstwin"."silver"."silver_telemetry" rename to "silver_telemetry__dbt_backup"
+[0m23:03:31.335237 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.338209 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:31.338687 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry"} */
+alter table "opstwin"."silver"."silver_telemetry__dbt_tmp" rename to "silver_telemetry"
+[0m23:03:31.339780 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.341974 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: COMMIT
+[0m23:03:31.342439 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:31.342988 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: COMMIT
+[0m23:03:31.353051 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m23:03:31.355425 [debug] [Thread-3 (]: Using duckdb connection "model.opstwin.silver_telemetry"
+[0m23:03:31.355974 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "model.opstwin.silver_telemetry"} */
+
+      drop table if exists "opstwin"."silver"."silver_telemetry__dbt_backup" cascade
+    
+[0m23:03:31.357913 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.359611 [debug] [Thread-3 (]: On model.opstwin.silver_telemetry: Close
+[0m23:03:31.360519 [info ] [Thread-3 (]: 26 of 31 OK created sql table model silver.silver_telemetry .................... [[32mOK[0m in 2.46s]
+[0m23:03:31.361207 [debug] [Thread-3 (]: Finished running node model.opstwin.silver_telemetry
+[0m23:03:31.362225 [debug] [Thread-1 (]: Began running node test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc
+[0m23:03:31.363067 [debug] [Thread-2 (]: Began running node test.opstwin.assert_telemetry_reconciliation
+[0m23:03:31.363767 [info ] [Thread-1 (]: 27 of 31 START test accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s  [RUN]
+[0m23:03:31.364552 [debug] [Thread-4 (]: Began running node test.opstwin.not_null_silver_telemetry_reading_id.38c126f747
+[0m23:03:31.365006 [debug] [Thread-3 (]: Began running node test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f
+[0m23:03:31.365466 [info ] [Thread-2 (]: 28 of 31 START test assert_telemetry_reconciliation ............................ [RUN]
+[0m23:03:31.366064 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.opstwin.accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE.5414f99a67, now test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc)
+[0m23:03:31.366517 [info ] [Thread-4 (]: 29 of 31 START test not_null_silver_telemetry_reading_id ....................... [RUN]
+[0m23:03:31.366966 [info ] [Thread-3 (]: 30 of 31 START test not_null_silver_telemetry_value_normalized ................. [RUN]
+[0m23:03:31.367490 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.opstwin.int_sensor_stats, now test.opstwin.assert_telemetry_reconciliation)
+[0m23:03:31.367901 [debug] [Thread-1 (]: Began compiling node test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc
+[0m23:03:31.368377 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.opstwin.not_null_stg_telemetry_sensor_id.d47fecd3f6, now test.opstwin.not_null_silver_telemetry_reading_id.38c126f747)
+[0m23:03:31.368842 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.opstwin.silver_telemetry, now test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f)
+[0m23:03:31.369248 [debug] [Thread-2 (]: Began compiling node test.opstwin.assert_telemetry_reconciliation
+[0m23:03:31.382311 [debug] [Thread-4 (]: Began compiling node test.opstwin.not_null_silver_telemetry_reading_id.38c126f747
+[0m23:03:31.401245 [debug] [Thread-3 (]: Began compiling node test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f
+[0m23:03:31.402593 [debug] [Thread-1 (]: Writing injected SQL for node "test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc"
+[0m23:03:31.405282 [debug] [Thread-2 (]: Writing injected SQL for node "test.opstwin.assert_telemetry_reconciliation"
+[0m23:03:31.412285 [debug] [Thread-4 (]: Writing injected SQL for node "test.opstwin.not_null_silver_telemetry_reading_id.38c126f747"
+[0m23:03:31.419262 [debug] [Thread-3 (]: Writing injected SQL for node "test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f"
+[0m23:03:31.420234 [debug] [Thread-2 (]: Began executing node test.opstwin.assert_telemetry_reconciliation
+[0m23:03:31.420657 [debug] [Thread-1 (]: Began executing node test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc
+[0m23:03:31.422251 [debug] [Thread-2 (]: Writing runtime sql for node "test.opstwin.assert_telemetry_reconciliation"
+[0m23:03:31.422662 [debug] [Thread-4 (]: Began executing node test.opstwin.not_null_silver_telemetry_reading_id.38c126f747
+[0m23:03:31.423036 [debug] [Thread-3 (]: Began executing node test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f
+[0m23:03:31.424554 [debug] [Thread-1 (]: Writing runtime sql for node "test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc"
+[0m23:03:31.425877 [debug] [Thread-4 (]: Writing runtime sql for node "test.opstwin.not_null_silver_telemetry_reading_id.38c126f747"
+[0m23:03:31.427171 [debug] [Thread-3 (]: Writing runtime sql for node "test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f"
+[0m23:03:31.427592 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.assert_telemetry_reconciliation"
+[0m23:03:31.428037 [debug] [Thread-2 (]: On test.opstwin.assert_telemetry_reconciliation: BEGIN
+[0m23:03:31.428334 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:03:31.428867 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.not_null_silver_telemetry_reading_id.38c126f747"
+[0m23:03:31.429242 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc"
+[0m23:03:31.429572 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f"
+[0m23:03:31.429852 [debug] [Thread-4 (]: On test.opstwin.not_null_silver_telemetry_reading_id.38c126f747: BEGIN
+[0m23:03:31.430159 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc: BEGIN
+[0m23:03:31.430438 [debug] [Thread-3 (]: On test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f: BEGIN
+[0m23:03:31.430725 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m23:03:31.430970 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m23:03:31.431232 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:03:31.431487 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:31.431751 [debug] [Thread-2 (]: Using duckdb connection "test.opstwin.assert_telemetry_reconciliation"
+[0m23:03:31.432144 [debug] [Thread-2 (]: On test.opstwin.assert_telemetry_reconciliation: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.assert_telemetry_reconciliation"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  -- Fails if any bronze row is unaccounted for after dedup, quarantine, and silver load.
+with b as (select count(*) as n from "opstwin"."staging"."stg_telemetry"),
+     c as (select count(*) as n from "opstwin"."silver"."int_telemetry_clean"),
+     s as (select count(*) as n from "opstwin"."silver"."silver_telemetry"),
+     q as (select count(*) as n from "opstwin"."silver"."silver_telemetry_quarantine")
+select b.n as bronze_rows, c.n as deduped_rows, s.n as silver_rows, q.n as quarantine_rows
+from b, c, s, q
+where c.n <> s.n + q.n
+   or b.n <= c.n
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:31.432623 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m23:03:31.432893 [debug] [Thread-4 (]: Using duckdb connection "test.opstwin.not_null_silver_telemetry_reading_id.38c126f747"
+[0m23:03:31.433205 [debug] [Thread-4 (]: On test.opstwin.not_null_silver_telemetry_reading_id.38c126f747: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_silver_telemetry_reading_id.38c126f747"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select reading_id
+from "opstwin"."silver"."silver_telemetry"
+where reading_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:31.433843 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:03:31.434148 [debug] [Thread-1 (]: Using duckdb connection "test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc"
+[0m23:03:31.434437 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.434754 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        unit_normalized as value_field,
+        count(*) as n_records
+
+    from "opstwin"."silver"."silver_telemetry"
+    group by unit_normalized
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'C','%','kW','L/min','mm/s'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:31.435073 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m23:03:31.446988 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f"
+[0m23:03:31.447334 [debug] [Thread-3 (]: On test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select value_normalized
+from "opstwin"."silver"."silver_telemetry"
+where value_normalized is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:31.448389 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.449701 [debug] [Thread-3 (]: On test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f: ROLLBACK
+[0m23:03:31.450124 [debug] [Thread-3 (]: On test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f: Close
+[0m23:03:31.450660 [info ] [Thread-3 (]: 30 of 31 PASS not_null_silver_telemetry_value_normalized ....................... [[32mPASS[0m in 0.08s]
+[0m23:03:31.451120 [debug] [Thread-3 (]: Finished running node test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f
+[0m23:03:31.451439 [debug] [Thread-3 (]: Began running node test.opstwin.unique_silver_telemetry_reading_id.0fdca27284
+[0m23:03:31.451716 [info ] [Thread-3 (]: 31 of 31 START test unique_silver_telemetry_reading_id ......................... [RUN]
+[0m23:03:31.452058 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.opstwin.not_null_silver_telemetry_value_normalized.218b95444f, now test.opstwin.unique_silver_telemetry_reading_id.0fdca27284)
+[0m23:03:31.452334 [debug] [Thread-3 (]: Began compiling node test.opstwin.unique_silver_telemetry_reading_id.0fdca27284
+[0m23:03:31.437213 [debug] [Thread-4 (]: On test.opstwin.not_null_silver_telemetry_reading_id.38c126f747: ROLLBACK
+[0m23:03:31.460232 [debug] [Thread-4 (]: On test.opstwin.not_null_silver_telemetry_reading_id.38c126f747: Close
+[0m23:03:31.461051 [info ] [Thread-4 (]: 29 of 31 PASS not_null_silver_telemetry_reading_id ............................. [[32mPASS[0m in 0.09s]
+[0m23:03:31.461814 [debug] [Thread-4 (]: Finished running node test.opstwin.not_null_silver_telemetry_reading_id.38c126f747
+[0m23:03:31.459307 [debug] [Thread-3 (]: Writing injected SQL for node "test.opstwin.unique_silver_telemetry_reading_id.0fdca27284"
+[0m23:03:31.468027 [debug] [Thread-3 (]: Began executing node test.opstwin.unique_silver_telemetry_reading_id.0fdca27284
+[0m23:03:31.470380 [debug] [Thread-3 (]: Writing runtime sql for node "test.opstwin.unique_silver_telemetry_reading_id.0fdca27284"
+[0m23:03:31.471433 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.unique_silver_telemetry_reading_id.0fdca27284"
+[0m23:03:31.471907 [debug] [Thread-3 (]: On test.opstwin.unique_silver_telemetry_reading_id.0fdca27284: BEGIN
+[0m23:03:31.472335 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:03:31.473477 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m23:03:31.473891 [debug] [Thread-3 (]: Using duckdb connection "test.opstwin.unique_silver_telemetry_reading_id.0fdca27284"
+[0m23:03:31.474238 [debug] [Thread-3 (]: On test.opstwin.unique_silver_telemetry_reading_id.0fdca27284: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "opstwin", "target_name": "dev", "node_id": "test.opstwin.unique_silver_telemetry_reading_id.0fdca27284"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    reading_id as unique_field,
+    count(*) as n_records
+
+from "opstwin"."silver"."silver_telemetry"
+where reading_id is not null
+group by reading_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m23:03:31.479202 [debug] [Thread-1 (]: SQL status: OK in 0.039 seconds
+[0m23:03:31.480863 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc: ROLLBACK
+[0m23:03:31.481468 [debug] [Thread-1 (]: On test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc: Close
+[0m23:03:31.482083 [info ] [Thread-1 (]: 27 of 31 PASS accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s  [[32mPASS[0m in 0.12s]
+[0m23:03:31.482612 [debug] [Thread-1 (]: Finished running node test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc
+[0m23:03:31.632178 [debug] [Thread-3 (]: SQL status: OK in 0.157 seconds
+[0m23:03:31.635538 [debug] [Thread-3 (]: On test.opstwin.unique_silver_telemetry_reading_id.0fdca27284: ROLLBACK
+[0m23:03:31.636805 [debug] [Thread-3 (]: On test.opstwin.unique_silver_telemetry_reading_id.0fdca27284: Close
+[0m23:03:31.638107 [info ] [Thread-3 (]: 31 of 31 PASS unique_silver_telemetry_reading_id ............................... [[32mPASS[0m in 0.19s]
+[0m23:03:31.639732 [debug] [Thread-3 (]: Finished running node test.opstwin.unique_silver_telemetry_reading_id.0fdca27284
+[0m23:03:35.011854 [debug] [Thread-2 (]: SQL status: OK in 3.579 seconds
+[0m23:03:35.015161 [debug] [Thread-2 (]: On test.opstwin.assert_telemetry_reconciliation: ROLLBACK
+[0m23:03:35.016108 [debug] [Thread-2 (]: On test.opstwin.assert_telemetry_reconciliation: Close
+[0m23:03:35.017092 [info ] [Thread-2 (]: 28 of 31 PASS assert_telemetry_reconciliation .................................. [[32mPASS[0m in 3.65s]
+[0m23:03:35.017887 [debug] [Thread-2 (]: Finished running node test.opstwin.assert_telemetry_reconciliation
+[0m23:03:35.019609 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:03:35.020157 [debug] [MainThread]: On master: BEGIN
+[0m23:03:35.020591 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:03:35.021608 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:03:35.022028 [debug] [MainThread]: On master: COMMIT
+[0m23:03:35.022418 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:03:35.022786 [debug] [MainThread]: On master: COMMIT
+[0m23:03:35.023315 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:03:35.023695 [debug] [MainThread]: On master: Close
+[0m23:03:35.024231 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:03:35.024602 [debug] [MainThread]: Connection 'test.opstwin.accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s.21c21473cc' was properly closed.
+[0m23:03:35.024949 [debug] [MainThread]: Connection 'test.opstwin.assert_telemetry_reconciliation' was properly closed.
+[0m23:03:35.025277 [debug] [MainThread]: Connection 'test.opstwin.unique_silver_telemetry_reading_id.0fdca27284' was properly closed.
+[0m23:03:35.025600 [debug] [MainThread]: Connection 'test.opstwin.not_null_silver_telemetry_reading_id.38c126f747' was properly closed.
+[0m23:03:35.026023 [info ] [MainThread]: 
+[0m23:03:35.026376 [info ] [MainThread]: Finished running 3 seeds, 5 table models, 15 data tests, 8 view models in 0 hours 0 minutes and 17.73 seconds (17.73s).
+[0m23:03:35.030696 [debug] [MainThread]: Command end result
+[0m23:03:35.075822 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nileshsrivastav/opstwin/src/warehouse/target/manifest.json
+[0m23:03:35.078162 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nileshsrivastav/opstwin/src/warehouse/target/semantic_manifest.json
+[0m23:03:35.080027 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/nileshsrivastav/opstwin/src/warehouse/target/osi_document.json
+[0m23:03:35.087563 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nileshsrivastav/opstwin/src/warehouse/target/run_results.json
+[0m23:03:35.087872 [info ] [MainThread]: 
+[0m23:03:35.088192 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:03:35.088453 [info ] [MainThread]: 
+[0m23:03:35.088727 [info ] [MainThread]: Done. PASS=31 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=31
+[0m23:03:35.091883 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 18.744259, "process_in_blocks": "0", "process_kernel_time": 18.39535, "process_mem_max_rss": "1014415360", "process_out_blocks": "0", "process_user_time": 103.77301}
+[0m23:03:35.092308 [debug] [MainThread]: Command `dbt build` succeeded at 23:03:35.092236 after 18.74 seconds
+[0m23:03:35.092598 [debug] [MainThread]: Flushing usage events

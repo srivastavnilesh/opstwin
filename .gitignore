@@ -8,3 +8,4 @@ mlruns/
 chroma/
 .env
 .DS_Store
+mlflow.db

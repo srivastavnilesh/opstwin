@@ -1,5 +1,4 @@
 """Phase 2A: profile bronze vs silver and emit a defect ledger with reconciliation."""
-"""Phase 2A: profile bronze vs silver and emit a defect ledger with reconciliation."""
 from __future__ import annotations
 
 import json
@@ -8,6 +7,7 @@ from datetime import datetime, timezone
 import duckdb
 
 from config import PATHS, SOURCES
+
 
 def scalar(con, sql: str):
     return con.execute(sql).fetchone()[0]
