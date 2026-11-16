@@ -1,0 +1,82 @@
+{
+  "generated_at_utc": "2026-11-14T15:51:25.303477+00:00",
+  "row_reconciliation": {
+    "bronze_rows": 633243,
+    "duplicates_removed": 2523,
+    "deduped_rows": 630720,
+    "quarantined_rows": 9363,
+    "silver_rows": 621357,
+    "balances": true
+  },
+  "defects": {
+    "nulls": {
+      "expected_rate": 0.015,
+      "observed_bronze": 9404,
+      "remaining_silver": 0
+    },
+    "duplicates": {
+      "expected_rate": 0.004,
+      "removed": 2523,
+      "remaining_silver": 0
+    },
+    "unit_drift": {
+      "expected_rate": 0.01,
+      "observed_bronze_f": 1552,
+      "remaining_silver_f": 0
+    },
+    "late_arrivals": {
+      "expected_rate": 0.02,
+      "observed_bronze": 12673,
+      "flagged_silver": 12437
+    },
+    "outliers": {
+      "expected_rate": 0.002,
+      "flagged_silver": 4384,
+      "policy": "flagged, retained for failure analysis"
+    }
+  },
+  "other_sources": {
+    "bookings": 48910,
+    "work_orders": 1200,
+    "sla_breaches": 635,
+    "notes": 1200,
+    "vendor_sla": 96
+  },
+  "silver_metric_ranges": [
+    {
+      "metric": "humidity",
+      "n": 155348,
+      "min": 23.26,
+      "avg": 55.39,
+      "max": 423.48
+    },
+    {
+      "metric": "power",
+      "n": 103525,
+      "min": -0.18,
+      "avg": 6.71,
+      "max": 74.39
+    },
+    {
+      "metric": "temperature",
+      "n": 155334,
+      "min": 10.54,
+      "avg": 24.18,
+      "max": 201.72
+    },
+    {
+      "metric": "vibration",
+      "n": 103624,
+      "min": 0.19,
+      "avg": 2.01,
+      "max": 20.85
+    },
+    {
+      "metric": "water",
+      "n": 103526,
+      "min": 1.14,
+      "avg": 12.09,
+      "max": 100.08
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: silver_telemetry
+    columns:
+      - name: reading_id
+        tests: [not_null, unique]
+      - name: value_normalized
+        tests: [not_null]
+      - name: unit_normalized
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['C', '%', 'kW', 'L/min', 'mm/s']
+  - name: silver_telemetry_quarantine
+    columns:
+      - name: quarantine_reason
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['NULL_VALUE']
+  - name: silver_work_orders
+    columns:
+      - name: ticket_id
+        tests: [not_null, unique]
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['OPEN', 'CLOSED']

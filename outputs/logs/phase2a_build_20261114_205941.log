@@ -1,0 +1,87 @@
+[0m15:29:43  Running with dbt=1.12.7
+[0m15:29:43  Registered adapter: duckdb=1.11.1
+[0m15:29:43  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:29:44  [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_telemetry'
+in package 'opstwin' (models/staging/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m15:29:44  Found 13 models, 15 data tests, 3 seeds, 512 macros
+[0m15:29:44  
+[0m15:29:44  Concurrency: 4 threads (target='dev')
+[0m15:29:44  
+[0m15:29:44  1 of 31 START sql view model staging.stg_assets ................................ [RUN]
+[0m15:29:44  2 of 31 START sql view model staging.stg_bookings .............................. [RUN]
+[0m15:29:44  3 of 31 START sql view model staging.stg_notes ................................. [RUN]
+[0m15:29:44  4 of 31 START sql view model staging.stg_sensors ............................... [RUN]
+[0m15:29:44  3 of 31 OK created sql view model staging.stg_notes ............................ [[32mOK[0m in 0.06s]
+[0m15:29:44  4 of 31 OK created sql view model staging.stg_sensors .......................... [[32mOK[0m in 0.06s]
+[0m15:29:44  1 of 31 OK created sql view model staging.stg_assets ........................... [[32mOK[0m in 0.07s]
+[0m15:29:44  5 of 31 START sql view model staging.stg_telemetry ............................. [RUN]
+[0m15:29:44  6 of 31 START sql view model staging.stg_vendors_sla ........................... [RUN]
+[0m15:29:44  7 of 31 START sql view model staging.stg_work_orders ........................... [RUN]
+[0m15:29:44  2 of 31 OK created sql view model staging.stg_bookings ......................... [[32mOK[0m in 0.08s]
+[0m15:29:44  8 of 31 START seed file seeds.sites ............................................ [RUN]
+[0m15:29:45  6 of 31 OK created sql view model staging.stg_vendors_sla ...................... [[32mOK[0m in 0.07s]
+[0m15:29:45  9 of 31 START seed file seeds.sla_targets ...................................... [RUN]
+[0m15:29:45  8 of 31 OK loaded seed file seeds.sites ........................................ [[32mINSERT 3[0m in 0.08s]
+[0m15:29:45  10 of 31 START seed file seeds.vendors ......................................... [RUN]
+[0m15:29:45  9 of 31 OK loaded seed file seeds.sla_targets .................................. [[32mINSERT 3[0m in 0.02s]
+[0m15:29:45  11 of 31 START sql table model silver.silver_bookings .......................... [RUN]
+[0m15:29:45  10 of 31 OK loaded seed file seeds.vendors ..................................... [[32mINSERT 4[0m in 0.05s]
+[0m15:29:45  7 of 31 OK created sql view model staging.stg_work_orders ...................... [[32mOK[0m in 0.24s]
+[0m15:29:45  12 of 31 START test accepted_values_stg_work_orders_priority__P1__P2__P3 ....... [RUN]
+[0m15:29:45  13 of 31 START test not_null_stg_work_orders_ticket_id ......................... [RUN]
+[0m15:29:45  11 of 31 OK created sql table model silver.silver_bookings ..................... [[32mOK[0m in 0.21s]
+[0m15:29:45  14 of 31 START test unique_stg_work_orders_ticket_id ........................... [RUN]
+[0m15:29:45  12 of 31 PASS accepted_values_stg_work_orders_priority__P1__P2__P3 ............. [[32mPASS[0m in 0.22s]
+[0m15:29:45  13 of 31 PASS not_null_stg_work_orders_ticket_id ............................... [[32mPASS[0m in 0.33s]
+[0m15:29:45  14 of 31 PASS unique_stg_work_orders_ticket_id ................................. [[32mPASS[0m in 0.26s]
+[0m15:29:45  15 of 31 START sql table model silver.silver_work_orders ....................... [RUN]
+[0m15:29:45  5 of 31 OK created sql view model staging.stg_telemetry ........................ [[32mOK[0m in 0.76s]
+[0m15:29:45  16 of 31 START test accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration  [RUN]
+[0m15:29:45  17 of 31 START test not_null_stg_telemetry_sensor_id ........................... [RUN]
+[0m15:29:45  18 of 31 START test not_null_stg_telemetry_ts_utc .............................. [RUN]
+[0m15:29:45  15 of 31 OK created sql table model silver.silver_work_orders .................. [[32mOK[0m in 0.21s]
+[0m15:29:45  19 of 31 START test accepted_values_silver_work_orders_status__OPEN__CLOSED .... [RUN]
+[0m15:29:45  19 of 31 PASS accepted_values_silver_work_orders_status__OPEN__CLOSED .......... [[32mPASS[0m in 0.02s]
+[0m15:29:45  20 of 31 START test not_null_silver_work_orders_ticket_id ...................... [RUN]
+[0m15:29:45  20 of 31 PASS not_null_silver_work_orders_ticket_id ............................ [[32mPASS[0m in 0.02s]
+[0m15:29:45  21 of 31 START test unique_silver_work_orders_ticket_id ........................ [RUN]
+[0m15:29:45  21 of 31 PASS unique_silver_work_orders_ticket_id .............................. [[32mPASS[0m in 0.02s]
+[0m15:29:47  17 of 31 PASS not_null_stg_telemetry_sensor_id ................................. [[32mPASS[0m in 1.57s]
+[0m15:29:48  16 of 31 PASS accepted_values_stg_telemetry_metric__temperature__humidity__power__water__vibration  [[32mPASS[0m in 2.62s]
+[0m15:29:49  18 of 31 PASS not_null_stg_telemetry_ts_utc .................................... [[32mPASS[0m in 3.31s]
+[0m15:29:49  22 of 31 START sql view model silver.int_telemetry_clean ....................... [RUN]
+[0m15:29:49  22 of 31 OK created sql view model silver.int_telemetry_clean .................. [[32mOK[0m in 0.57s]
+[0m15:29:49  23 of 31 START sql table model silver.int_sensor_stats ......................... [RUN]
+[0m15:29:49  24 of 31 START sql table model silver.silver_telemetry_quarantine .............. [RUN]
+[0m15:29:51  23 of 31 OK created sql table model silver.int_sensor_stats .................... [[32mOK[0m in 2.17s]
+[0m15:29:51  25 of 31 START sql table model silver.silver_telemetry ......................... [RUN]
+[0m15:29:52  24 of 31 OK created sql table model silver.silver_telemetry_quarantine ......... [[32mOK[0m in 2.64s]
+[0m15:29:52  26 of 31 START test accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE  [RUN]
+[0m15:29:52  26 of 31 PASS accepted_values_silver_telemetry_quarantine_quarantine_reason__NULL_VALUE  [[32mPASS[0m in 0.01s]
+[0m15:29:53  25 of 31 OK created sql table model silver.silver_telemetry .................... [[32mOK[0m in 1.53s]
+[0m15:29:53  27 of 31 START test accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s  [RUN]
+[0m15:29:53  28 of 31 START test assert_telemetry_reconciliation ............................ [RUN]
+[0m15:29:53  29 of 31 START test not_null_silver_telemetry_reading_id ....................... [RUN]
+[0m15:29:53  30 of 31 START test not_null_silver_telemetry_value_normalized ................. [RUN]
+[0m15:29:53  29 of 31 PASS not_null_silver_telemetry_reading_id ............................. [[32mPASS[0m in 0.03s]
+[0m15:29:53  31 of 31 START test unique_silver_telemetry_reading_id ......................... [RUN]
+[0m15:29:53  30 of 31 PASS not_null_silver_telemetry_value_normalized ....................... [[32mPASS[0m in 0.03s]
+[0m15:29:53  27 of 31 PASS accepted_values_silver_telemetry_unit_normalized__C_____kW__L_min__mm_s  [[32mPASS[0m in 0.05s]
+[0m15:29:53  31 of 31 PASS unique_silver_telemetry_reading_id ............................... [[32mPASS[0m in 0.10s]
+[0m15:29:55  28 of 31 PASS assert_telemetry_reconciliation .................................. [[32mPASS[0m in 2.26s]
+[0m15:29:55  
+[0m15:29:55  Finished running 3 seeds, 5 table models, 15 data tests, 8 view models in 0 hours 0 minutes and 10.85 seconds (10.85s).
+[0m15:29:55  
+[0m15:29:55  [32mCompleted successfully[0m
+[0m15:29:55  
+[0m15:29:55  Done. PASS=31 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=31
+[0m15:29:55  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 5 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.

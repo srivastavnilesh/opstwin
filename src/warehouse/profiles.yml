@@ -1,0 +1,9 @@
+opstwin:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "data/opstwin.duckdb"
+      threads: 4
+      settings:
+        TimeZone: "UTC"

@@ -1,0 +1,10 @@
+{
+  "bronze_rows": 633243,
+  "duplicates_removed": 2523,
+  "deduped_rows": 630720,
+  "quarantined_rows": 9363,
+  "silver_rows": 621357,
+  "balances": true
+}
+[profile] ledger -> /Users/nileshsrivastav/opstwin/outputs/manifests/phase2_profile.json
+[profile] report -> /Users/nileshsrivastav/opstwin/outputs/reports/phase2_profile.md

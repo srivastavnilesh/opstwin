@@ -1,0 +1,26 @@
+name: opstwin
+version: "1.0.0"
+config-version: 2
+profile: opstwin
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  bronze_root: "data/bronze"
+
+models:
+  opstwin:
+    staging:
+      +materialized: view
+      +schema: staging
+    silver:
+      +materialized: table
+      +schema: silver
+
+seeds:
+  opstwin:
+    +schema: seeds

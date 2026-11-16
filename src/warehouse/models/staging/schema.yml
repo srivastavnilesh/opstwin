@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: stg_telemetry
+    columns:
+      - name: ts_utc
+        tests: [not_null]
+      - name: sensor_id
+        tests: [not_null]
+      - name: metric
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['temperature', 'humidity', 'power', 'water', 'vibration']
+  - name: stg_work_orders
+    columns:
+      - name: ticket_id
+        tests: [not_null, unique]
+      - name: priority
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['P1', 'P2', 'P3']

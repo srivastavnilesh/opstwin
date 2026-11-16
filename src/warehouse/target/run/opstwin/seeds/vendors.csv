@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "opstwin"."seeds"."vendors";
+    -- dbt seed --
+    
+          COPY "opstwin"."seeds"."vendors" FROM 'src/warehouse/seeds/vendors.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
