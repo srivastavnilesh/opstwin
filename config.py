@@ -46,7 +46,7 @@ class ML:
 
 @dataclass(frozen=True)
 class Agent:
-    model: str = "gemini-2.0-flash"
+    model: str = "gemini-3.5-flash"
     embedding_model: str = "text-embedding-004"
     offline_fallback: str = "ollama/llama3.2"
     max_sql_rows: int = 500

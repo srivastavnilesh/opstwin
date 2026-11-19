@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-11-19T12:10:34.004177+00:00",
+  "accuracy": 0.5,
+  "results": [
+    {
+      "question": "Which site generated the most total revenue?",
+      "passed": false,
+      "agent_sql": "SELECT\n  site_id,\n  site_name,\n  SUM(revenue_inr) AS total_revenue\nFROM marts.mart_site_daily_ops\nGROUP BY site_id, site_name\nORDER BY total_revenue DESC\nLIMIT 1",
+      "expected_first_row": "('HYD-OLD-001',)",
+      "agent_first_row": "('HYD-OLD-001', 'Asaf Jah Haveli', 58876004.0)"
+    },
+    {
+      "question": "How many maintenance tickets are still open?",
+      "passed": true,
+      "agent_sql": "SELECT COUNT(*) FROM gold.fact_work_orders WHERE is_open = TRUE",
+      "expected_first_row": "(77,)",
+      "agent_first_row": "(77,)"
+    },
+    {
+      "question": "Which vendor has the highest SLA breach percentage?",
+      "passed": false,
+      "agent_sql": "SELECT vendor_id, vendor_name, breach_pct\nFROM marts.mart_vendor_performance\nORDER BY breach_pct DESC\nLIMIT 1",
+      "expected_first_row": "('V-BETA',)",
+      "agent_first_row": "('V-BETA', 'Beta MEP Contractors', 54.03)"
+    },
+    {
+      "question": "How many outlier sensor readings exist in total?",
+      "passed": true,
+      "agent_sql": "SELECT COUNT(*) FROM gold.fact_telemetry WHERE is_outlier = true",
+      "expected_first_row": "(4384,)",
+      "agent_first_row": "(4384,)"
+    }
+  ]
+}

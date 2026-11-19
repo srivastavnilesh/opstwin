@@ -1,0 +1,5 @@
+[eval] FAIL | Which site generated the most total revenue?
+[eval] PASS | How many maintenance tickets are still open?
+[eval] FAIL | Which vendor has the highest SLA breach percentage?
+[eval] PASS | How many outlier sensor readings exist in total?
+[eval] accuracy = 50% -> /Users/nileshsrivastav/opstwin/outputs/manifests/phase6_agent_eval.json
