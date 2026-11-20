@@ -50,8 +50,6 @@ uvicorn src.serving.api:app --port 8000
 # Swagger UI at http://127.0.0.1:8000  — execute /predict live
 ```
 
-![FastAPI Swagger UI](api_swagger.png)
-
 ### Ask from your terminal
 
 ```bash
@@ -110,8 +108,6 @@ Defects are injected at known rates by the generator so the validation layer has
 | Unit drift (Fahrenheit) | 1.0% | 1,552 | 0 |
 | Late arrivals | 2.0% | 12,673 | flagged, retained |
 | Outliers | 0.2% | n/a | 4,384 flagged, retained |
-
-Outliers are flagged, never deleted — a spike may be a real failure in progress. Full ledger: [`outputs/reports/phase2_profile.md`](outputs/reports/phase2_profile.md).
 
 ## Guarded agent design
 
