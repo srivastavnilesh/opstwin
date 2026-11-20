@@ -1,0 +1,39 @@
+name: Ask OpsTwin
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  answer:
+    if: startsWith(github.event.issue.title, 'Ask:')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install minimal agent stack
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy sqlalchemy "psycopg[binary]" dbt-duckdb duckdb python-dotenv google-genai
+
+      - name: Provision warehouse (12-month fast mode)
+        run: |
+          python -m src.data.generate --months 12
+          python -m dbt build --project-dir src/warehouse --profiles-dir src/warehouse
+
+      - name: Run guarded agent on the issue question
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          QUESTION: ${{ github.event.issue.body }}
+        run: python scripts/issue_agent.py
+
+      - name: Reply in-thread
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh issue comment "${{ github.event.issue.number }}" --body-file outputs/agent_answer.md
