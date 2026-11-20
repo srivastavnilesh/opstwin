@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn>=0.30
+duckdb>=1.1
+pandas>=2.2
+numpy>=1.26
+mlflow>=2.14
+xgboost>=2.1
+google-genai>=1.0
+python-dotenv>=1.0
+pydantic>=2.10
+scikit-learn>=1.5
